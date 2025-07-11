@@ -1,0 +1,7 @@
+pyodbc
+langchain
+langchain-core
+langchain-community
+langchain_text_splitters
+langchain-openai
+faiss-cpu
