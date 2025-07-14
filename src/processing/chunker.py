@@ -2,7 +2,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-from src.db.extract_data import docs  # now this works
+from src.db.extract_data import docs
 from src.config_loader import chunking_config
 
 chunking_config = chunking_config()
