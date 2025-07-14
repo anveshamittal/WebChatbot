@@ -47,4 +47,6 @@ def ask_question(query):
     result = qa.invoke({"input": query})
     return result["answer"]
 
-print(ask_question("who are the characters in the story?"))
+# print(ask_question("who are the characters in the story?"))
+
+# how to create faiss index so i can store it in azure storage blobs as a single file
