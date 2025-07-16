@@ -9,11 +9,5 @@ chunking_config = chunking_config()
 
 def chunk_documents(docs, chunk_size=chunking_config['chunk_size'], chunk_overlap=chunking_config['chunk_overlap']):
     splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
-    chunks= splitter.split_text(docs)
+    chunks= splitter.split_text(docs["page_content"])
     return chunks
-
-docs = fetch_data()
-
-for doc in docs:
-    chunks=chunk_documents(doc)
-    print(chunks)

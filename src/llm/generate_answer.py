@@ -5,6 +5,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from langchain_huggingface import HuggingFaceEmbeddings
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -15,12 +16,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 from src.processing.embedder import embeddings
 
 def load_qa_chain():
-    embeddings = OpenAIEmbeddings(
-    model=os.getenv("AZURE_MODEL"),
-    base_url=os.getenv("AZURE_OPENAI_ENDPOINT"),
-    api_key=os.getenv("AZURE_EMBEDDING_KEY"),
-    default_query={"api-version":"preview"}
-    )
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     index = FAISS.load_local("data/faiss_index", embeddings,allow_dangerous_deserialization=True)
     llm = ChatOpenAI(
         model=os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME"),
