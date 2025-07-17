@@ -37,11 +37,10 @@ def get_text_splitter(chunk_size, chunk_overlap):
     """Initializes and returns the text splitter."""
     return RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
 
-def get_embeddings(model_name):
+def get_embeddings(model_type: str, model_name: str):
     return OpenAIEmbeddings(
     model=model_name,
     base_url=os.getenv("AZURE_OPENAI_ENDPOINT"),
     api_key=os.getenv("AZURE_EMBEDDING_KEY"),
     default_query={"api-version":"preview"}
     )
-    return HuggingFaceInstructEmbeddings(model_name=model_name)

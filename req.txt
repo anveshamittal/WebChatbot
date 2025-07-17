@@ -10,3 +10,5 @@ pyYML
 bs4
 azure-storage-blob
 pandas
+langchain-huggingface
+sentence-transformers

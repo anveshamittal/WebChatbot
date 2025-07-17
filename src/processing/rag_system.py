@@ -6,20 +6,21 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(__file__,'...','...')))
 from  cloud_connectors import azure_handler
-import config
+from src.config_loader import AppConfig
 
 class RAGSystem:
-    def __init__(self, container_client, embeddings):
+    def __init__(self, container_client, embeddings, config:AppConfig):
         self.container_client = container_client
         self.embeddings = embeddings
+        self.config = config
         self._load_vector_store()
 
     def _load_vector_store(self):
         """Loads the vector store from Azure or creates a new one."""
         index, docstore, mapping = azure_handler.load_index_from_azure(
             self.container_client,
-            config.FAISS_INDEX_BLOB_NAME,
-            config.DOCSTORE_BLOB_NAME
+            self.config.files['faiss_index_blob_name'],
+            self.config.files['datastore_blob_name']
         )
         if index and docstore and mapping is not None:
             self.vector_store = FAISS(
