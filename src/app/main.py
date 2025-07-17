@@ -1,3 +1,4 @@
+from logging import config
 from src.processing import document_processor
 from src.processing.rag_system import RAGSystem
 from src.config_loader import AppConfig
