@@ -4,30 +4,28 @@ from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_openai.embeddings import OpenAIEmbeddings
+from bs4 import  SoupStrainer
 import os
 from dotenv import load_dotenv
+import re
 
 load_dotenv()
 
 def load_and_parse_url(url, doc_id):
     """Loads and parses a URL into a LangChain Document."""
     try:
-        loader = WebBaseLoader(url)
-        data = loader.load()
-        soup = BeautifulSoup(data[0].page_content, "html.parser")
+        loader = WebBaseLoader(
+                web_paths=[url],
+                bs_kwargs={
+                    "parse_only": SoupStrainer(["main","head"])})
+        
+        document = loader.load()
+        body_content = _clean_text(document[0].page_content)
 
-        head_content = soup.head or soup.new_tag('head')
         metadata = {
             'source': url,
-            'id': doc_id,
-            'title': soup.title.string if soup.title else "No title",
-            'meta': {
-                tag['name']: tag['content']
-                for tag in head_content.find_all('meta')
-                if tag.get('name') and tag.get('content')
+            'id': doc_id
             }
-        }
-        body_content = soup.body.get_text(separator=' ', strip=True) if soup.body else ""
         return Document(page_content=body_content, metadata=metadata)
     except Exception as e:
         print(f"Error loading or parsing URL {url}: {e}")
@@ -36,6 +34,12 @@ def load_and_parse_url(url, doc_id):
 def get_text_splitter(chunk_size, chunk_overlap):
     """Initializes and returns the text splitter."""
     return RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
+
+def _clean_text(text):
+    text = re.sub(r'\n{2,}', '\n', text)
+    text = '\n'.join([line.strip() for line in text.split('\n')])
+    text = re.sub(r' {2,}', ' ', text)
+    return text.strip()
 
 def get_embeddings(model_name):
     # return OpenAIEmbeddings(

@@ -11,7 +11,7 @@ class RAGSystem:
     def __init__(self, container_client, embeddings, config:AppConfig):
         self.container_client = container_client
         self.embeddings = embeddings
-        self.config = AppConfig()
+        self.config = config
         self._load_vector_store()
 
     def _load_vector_store(self):
@@ -21,7 +21,7 @@ class RAGSystem:
             self.config.files['faiss_index_blob_name'],
             self.config.files['datastore_blob_name']
         )
-        if index and docstore and mapping is not None:
+        if index is not None and docstore is not None and mapping is not None:
             self.vector_store = FAISS(
                 embedding_function=self.embeddings,
                 index=index,
@@ -51,15 +51,36 @@ class RAGSystem:
             self.config.files['datastore_blob_name']
         )
 
-    def add_documents(self, documents, chunk_size, chunk_overlap):
-        """Chunks and adds new documents to the vector store."""
+    # def add_documents(self, documents, text_splitter):
+    #     """Chunks and adds new documents to the vector store using a provided splitter."""
+    #     if not documents:
+    #         return
+    #     # Use the splitter that was passed into the method
+    #     chunks = text_splitter.split_documents(documents)
+    #     ids = [f"{doc.metadata['id']}-{i}" for i, doc in enumerate(chunks)]
+    #     self.vector_store.add_documents(chunks, ids=ids)
+    #     print(f"Added {len(chunks)} new chunks.")
+    def add_documents(self, documents, text_splitter):
+        """Chunks and adds new documents to the vector store using a provided splitter."""
         if not documents:
             return
-        splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
-        chunks = splitter.split_documents(documents)
-        ids = [f"{doc.metadata['id']}-{i}" for i, doc in enumerate(chunks)]
-        self.vector_store.add_documents(chunks, ids=ids)
-        print(f"Added {len(chunks)} new chunks.")
+    
+        chunks = text_splitter.split_documents(documents)
+    
+        # --- FIX: Filter out empty chunks before processing ---
+        valid_chunks = [chunk for chunk in chunks if chunk.page_content and chunk.page_content.strip()]
+    
+        if not valid_chunks:
+            print("Warning: No valid, non-empty chunks were created. Nothing to add.")
+            return
+        # --- End of Fix ---
+    
+        # Now, use 'valid_chunks' for all subsequent operations
+        ids = [f"{doc.metadata['id']}-{i}" for i, doc in enumerate(valid_chunks)]
+        # IMPORTANT: The 'ids' parameter is not officially supported and should be removed.
+        # See note below.
+        self.vector_store.add_documents(valid_chunks) 
+        print(f"Added {len(valid_chunks)} new chunks.")
 
     def delete_documents(self, doc_ids_to_delete):
         """Deletes all chunks associated with a list of document IDs."""

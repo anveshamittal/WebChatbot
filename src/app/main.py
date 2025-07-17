@@ -25,34 +25,34 @@ def start_application():
         app_config.chunking['chunk_overlap']
     )
 
-    rag = RAGSystem(container_client, embeddings, AppConfig)
+    rag = RAGSystem(container_client, embeddings, AppConfig())
 
-    # # --- 3. Process Documents for Addition ---
-    # docs_to_add = []
-    # add_files = file[file['type'].str.lower() == 'add']
-    # for _, row in add_files.iterrows():
-    #     doc = document_processor.load_and_parse_url(row['url'], row['id'])
-    #     if doc:
-    #         docs_to_add.append(doc)
+    # --- 3. Process Documents for Addition ---
+    docs_to_add = []
+    add_files = file[file['type'].str.lower() == 'add']
+    for _, row in add_files.iterrows():
+        doc = document_processor.load_and_parse_url(row['url'], row['id'])
+        if doc:
+            docs_to_add.append(doc)
     
-    # if docs_to_add:
-    #     print(f"\nAdding {len(docs_to_add)} new document(s)...")
-    #     rag.add_documents(docs_to_add, text_splitter)
+    if docs_to_add:
+        print(f"\nAdding {len(docs_to_add)} new document(s)...")
+        rag.add_documents(docs_to_add, text_splitter)
 
-    # # --- 4. Process Documents for Deletion ---
-    # ids_to_delete = df[df['type'].str.lower() == 'delete']['id'].tolist()
-    # if ids_to_delete:
-    #     print(f"\nDeleting document(s) with IDs: {ids_to_delete}...")
-    #     rag.delete_documents(ids_to_delete)
+    # --- 4. Process Documents for Deletion ---
+    ids_to_delete = file[file['type'].str.lower() == 'delete']['id'].tolist()
+    if ids_to_delete:
+        print(f"\nDeleting document(s) with IDs: {ids_to_delete}...")
+        rag.delete_documents(ids_to_delete)
 
-    # # --- 5. Save the final state ---
-    # if docs_to_add or ids_to_delete:
-    #     print("\nSaving updated index to Azure...")
-    #     rag.save()
-    # else:
-    #     print("\nNo changes to add or delete. Index is up to date.")
+    # --- 5. Save the final state ---
+    if docs_to_add or ids_to_delete:
+        print("\nSaving updated index to Azure...")
+        rag.save()
+    else:
+        print("\nNo changes to add or delete. Index is up to date.")
 
-    # # --- 6. Perform a test search ---
+    # --- 6. Perform a test search ---
     # print("\n--- Performing a test search ---")
     # search_query = "What are the benefits of SWIFT for corporates?"
     # results = rag.search(search_query)
