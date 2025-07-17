@@ -2,7 +2,7 @@ from logging import config
 from src.processing import document_processor
 from src.processing.rag_system import RAGSystem
 from src.config_loader import AppConfig
-from src.cloud_connectors import azure_handler
+from src.cloud_connectors  import azure_handler
 def start_application():
 
     app_config = AppConfig()
@@ -12,9 +12,9 @@ def start_application():
         app_config.azure['storage_connect_string'],
         app_config.azure['container_name']
     )
-    
-    # --- 2. Load Instructions and Initialize RAG System ---
-    file = azure_handler.load_csv_from_azure(container_client, app_config.files['data.csv'])
+
+ # --- 2. Load Instructions and Initialize RAG System ---
+    file = azure_handler.load_csv_from_azure(container_client, app_config.files['csv_blob_name'])
     if file is None:
         print("Exiting: Could not load CSV instruction file.")
         return
@@ -22,11 +22,11 @@ def start_application():
     embeddings = document_processor.get_embeddings(app_config.embedding['embedding_model'])
 
     text_splitter = document_processor.get_text_splitter(
-        app_config.embedding['chunk_size'],
-        app_config.embedding['chunk_overlap']
+        app_config.chunking['chunk_size'],
+        app_config.chunking['chunk_overlap']
     )
 
-    rag = RAGSystem(container_client, embeddings)
+    rag = RAGSystem(container_client, embeddings, AppConfig)
 
     # # --- 3. Process Documents for Addition ---
     # docs_to_add = []

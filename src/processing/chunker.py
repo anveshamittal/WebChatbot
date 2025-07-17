@@ -5,7 +5,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from src.db.extract_data import fetch_data
-from src.config_loader import chunking_config
+# from src.config_loader import chunking_config
 
 def chunk_documents(docs, chunk_size, chunk_overlap):
     splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
