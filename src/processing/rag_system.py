@@ -1,25 +1,25 @@
-import faiss
-import numpy as np
 from langchain_community.docstore import InMemoryDocstore
+import faiss
 from langchain_community.vectorstores import FAISS
-import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(__file__,'...','...')))
-from  cloud_connectors import azure_handler
-import config
+from  src.cloud_connectors import azure_handler
+from src.config_loader import AppConfig
+# from langchain_community.vectorstores import faiss
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 class RAGSystem:
-    def __init__(self, container_client, embeddings):
+    def __init__(self, container_client, embeddings, config:AppConfig):
         self.container_client = container_client
         self.embeddings = embeddings
+        self.config = AppConfig()
         self._load_vector_store()
 
     def _load_vector_store(self):
         """Loads the vector store from Azure or creates a new one."""
         index, docstore, mapping = azure_handler.load_index_from_azure(
             self.container_client,
-            config.FAISS_INDEX_BLOB_NAME,
-            config.DOCSTORE_BLOB_NAME
+            self.config.files['faiss_index_blob_name'],
+            self.config.files['datastore_blob_name']
         )
         if index and docstore and mapping is not None:
             self.vector_store = FAISS(
@@ -30,7 +30,7 @@ class RAGSystem:
             )
         else:
             print("Creating a new vector store.")
-            index = faiss.IndexFlatL2(config.EMBEDDING_DIMENSION)
+            index = faiss.IndexFlatL2(self.config.embedding['embedding_dimension'])
             docstore = InMemoryDocstore({})
             mapping = {}
             self.vector_store = FAISS(
@@ -47,15 +47,16 @@ class RAGSystem:
             self.vector_store.index,
             self.vector_store.docstore,
             self.vector_store.index_to_docstore_id,
-            config.FAISS_INDEX_BLOB_NAME,
-            config.DOCSTORE_BLOB_NAME
+            self.config.files['faiss_index_blob_name'],
+            self.config.files['datastore_blob_name']
         )
 
-    def add_documents(self, documents, text_splitter):
+    def add_documents(self, documents, chunk_size, chunk_overlap):
         """Chunks and adds new documents to the vector store."""
         if not documents:
             return
-        chunks = text_splitter.split_documents(documents)
+        splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
+        chunks = splitter.split_documents(documents)
         ids = [f"{doc.metadata['id']}-{i}" for i, doc in enumerate(chunks)]
         self.vector_store.add_documents(chunks, ids=ids)
         print(f"Added {len(chunks)} new chunks.")

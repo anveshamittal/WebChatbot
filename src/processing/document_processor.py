@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import HuggingFaceInstructEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_openai.embeddings import OpenAIEmbeddings
 import os
 from dotenv import load_dotenv
@@ -38,10 +38,10 @@ def get_text_splitter(chunk_size, chunk_overlap):
     return RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
 
 def get_embeddings(model_name):
-    return OpenAIEmbeddings(
-    model=model_name,
-    base_url=os.getenv("AZURE_OPENAI_ENDPOINT"),
-    api_key=os.getenv("AZURE_EMBEDDING_KEY"),
-    default_query={"api-version":"preview"}
-    )
-    return HuggingFaceInstructEmbeddings(model_name=model_name)
+    # return OpenAIEmbeddings(
+    # model=model_name,
+    # base_url=os.getenv("AZURE_OPENAI_ENDPOINT"),
+    # api_key=os.getenv("AZURE_EMBEDDING_KEY"),
+    # default_query={"api-version":"preview"}
+    # )
+    return HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")

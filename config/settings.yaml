@@ -9,6 +9,6 @@ azure:
   container_name: "ai-files"
 files:
   csv_blob_name : "data.csv"
-  faiss_index_blob_name : "FAISS_INDEX_BLOB_NAME"
-  datastore_blob_name : "DOCSTORE_BLOB_NAME"
+  faiss_index_blob_name : "index.faiss"
+  datastore_blob_name : "index.pkl"
 
