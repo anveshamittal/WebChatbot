@@ -12,3 +12,4 @@ azure-storage-blob
 pandas
 langchain-huggingface
 sentence-transformers
+fastapi
