@@ -3,3 +3,12 @@ chunking:
   chunk_overlap: 50
 embedding:
   embedding_model: "text-embedding-3-small-custom"
+  embedding_dimension : 768
+azure: 
+  storage_connect_string: "DefaultEndpointsProtocol=https;AccountName=tieoevryblobsv11;AccountKey=7pqpgEEitbwcK+JRckL2cT6wQZA1CYPDeOp4q3mPa3bqtpA7ZZjmXfID2RrVW47Vor8XrLy2EzxN+AStVE9I/g==;EndpointSuffix=core.windows.net"
+  container_name: "ai-files"
+files:
+  csv_blob_name : "data.csv"
+  faiss_index_blob_name : "FAISS_INDEX_BLOB_NAME"
+  datastore_blob_name : "DOCSTORE_BLOB_NAME"
+
