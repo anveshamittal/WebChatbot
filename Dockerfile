@@ -12,6 +12,7 @@ RUN pip install --no-cache-dir -r req.txt
 # Copy your application's source code into the container
 COPY ./src ./src
 COPY ./config ./config
+COPY ./data ./data
 # Note: We are NOT copying the local faiss_index anymore
 
 # Expose the port the app runs on (e.g., 8000 for FastAPI/Uvicorn)

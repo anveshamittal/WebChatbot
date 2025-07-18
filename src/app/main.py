@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI
 from pydantic import BaseModel
 from src.llm.generate_answer import ask_question
@@ -23,6 +24,20 @@ async def process_csv_file():
     """Receives a question and returns a placeholder answer."""
     process_csv()
     return {}
+
+@app.get("/process_csv_file")
+async def delete_local_index():
+    index_folder = "data/faiss_index" 
+    base_directory = os.path.dirname(index_folder)
+    for file_path in base_directory.iterdir():
+        try:
+        # Check if the entry is a file
+            if file_path.is_file():
+                print(f"Deleting file: {file_path.name}")
+                # Delete the file
+                file_path.unlink()
+        except Exception as e:
+            print(f"Error deleting {file_path.name}: {e}")
 
 # def test():
 #     return "I can execute"

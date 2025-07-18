@@ -25,7 +25,7 @@ def setup_qa_chain():
     base_directory = os.path.dirname(index_folder) # e.g., 'data'
     faiss_file = os.path.join(base_directory, app_config.files['faiss_index_blob_name'])
     datastore_file = os.path.join(base_directory, app_config.files['datastore_blob_name'])
-
+    
     if not os.path.exists(faiss_file) or not os.path.exists(datastore_file):
         azure_handler.download_faiss_index()
 
