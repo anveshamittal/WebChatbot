@@ -86,22 +86,27 @@ class RAGSystem:
         """Deletes all chunks associated with a list of document IDs."""
         if not doc_ids_to_delete:
             return
-        
-        ids_to_remove = []
-        if self.vector_store.index_to_docstore_id:
-            all_docstore_ids = list(self.vector_store.index_to_docstore_id.values())
-            for docstore_id in all_docstore_ids:
-                doc = self.vector_store.docstore.search(docstore_id)
-                if doc and str(doc.metadata.get('id')) in map(str, doc_ids_to_delete):
-                    faiss_index_keys = [k for k, v in self.vector_store.index_to_docstore_id.items() if v == docstore_id]
-                    ids_to_remove.extend(faiss_index_keys)
 
-        if not ids_to_remove:
+        # 1. Convert the list of IDs to a set for efficient O(1) lookups.
+        #    This is much faster than checking against a list or map inside a loop.
+        target_id_set = {str(doc_id) for doc_id in doc_ids_to_delete}
+        
+        # 2. Collect the actual docstore IDs (UUIDs) that need to be deleted.
+        docstore_ids_to_delete = []
+        
+        # Iterate directly through the items in the docstore.
+        for docstore_id, doc in self.vector_store.docstore._dict.items():
+            # Check if the document's source ID is in our target set.
+            if doc.metadata and str(doc.metadata.get('id')) in target_id_set:
+                docstore_ids_to_delete.append(docstore_id)
+
+        if not docstore_ids_to_delete:
             print("No matching chunks found to delete.")
             return
 
-        self.vector_store.delete([str(i) for i in ids_to_remove])
-        print(f"Successfully deleted {len(ids_to_remove)} chunks.")
+        # 3. Call delete with the correct list of docstore string IDs.
+        self.vector_store.delete(docstore_ids_to_delete)
+        print(f"Successfully deleted {len(docstore_ids_to_delete)} chunks.")
 
     def search(self, query, k=5):
         """Performs a similarity search."""
