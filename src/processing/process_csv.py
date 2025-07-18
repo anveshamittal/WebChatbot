@@ -1,14 +1,17 @@
-from logging import config
 from src.processing import document_processor
 from src.processing.rag_system import RAGSystem
 from src.config_loader import AppConfig
 from src.cloud_connectors  import azure_handler
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 def process_csv():
     app_config = AppConfig()
     """Main function to run the RAG system update process."""
     # --- 1. Initialization ---
     container_client = azure_handler.get_container_client(
-        app_config.azure['storage_connect_string'],
+        os.getenv("AZURE_STORAGE_CONNECTION_STRING"),
         app_config.azure['container_name']
     )
 
@@ -18,9 +21,9 @@ def process_csv():
         print("Exiting: Could not load CSV instruction file.")
         return
 
-    embeddings = document_processor.get_embeddings(app_config.embedding['embedding_model'])
+    embeddings = document_processor.initialize_embedding_model("huggingface",app_config.embedding['embedding_model'])
 
-    text_splitter = document_processor.get_text_splitter(
+    text_splitter = document_processor.create_text_splitter(
         app_config.chunking['chunk_size'],
         app_config.chunking['chunk_overlap']
     )
@@ -53,6 +56,7 @@ def process_csv():
         print("\nNo changes to add or delete. Index is up to date.")
 
     return 'csv processed successfully!'
+
     # # --- 6. Perform a test search ---
     # print("\n--- Performing a test search ---")
     # search_query = "What are the benefits of SWIFT for corporates?"

@@ -1,7 +1,7 @@
 from langchain_huggingface import HuggingFaceEmbeddings
-from src.llm.BaseAIWrapper import BaseEmbeddingsWrapper
+from src.llm.BaseAIWrapper import BaseAIWrapper
 
-class HuggingFaceEmbeddingsWrapper(BaseEmbeddingsWrapper):
+class HuggingFaceEmbeddingsWrapper(BaseAIWrapper):
     """
     Wrapper for HuggingFaceEmbeddings.
     Configures and returns a HuggingFaceEmbeddings instance.

@@ -13,3 +13,4 @@ pandas
 langchain-huggingface
 sentence-transformers
 fastapi
+fastapi[standard]

@@ -1,9 +1,9 @@
 from langchain_openai import OpenAIEmbeddings
-from src.llm.BaseAIWrapper import BaseEmbeddingsWrapper
+from src.llm.BaseAIWrapper import BaseAIWrapper
 
 import os
 
-class OpenAIEmbeddingsWrapper(BaseEmbeddingsWrapper):
+class OpenAIEmbeddingsWrapper(BaseAIWrapper):
     """
     Wrapper for OpenAIEmbeddings.
     Configures and returns an OpenAIEmbeddings instance.

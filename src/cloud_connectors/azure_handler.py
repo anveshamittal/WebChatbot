@@ -4,7 +4,8 @@ import faiss
 import tempfile
 import os
 from azure.storage.blob import BlobServiceClient
-
+from src.config_loader import AppConfig
+app_config = AppConfig()
 def get_container_client(connection_string, container_name):
     """Initializes and returns a Blob Container Client."""
     if not connection_string:
@@ -88,3 +89,22 @@ def save_index_to_azure(container_client, index, docstore, index_to_docstore_id,
             container_client.upload_blob(name=docstore_blob_name, data=data, overwrite=True)
     
     print("Successfully saved index to Azure.")
+
+def download_faiss_index():
+    connect_str = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
+    container_name =app_config.azure['container_name']
+    index_folder = "data/faiss_index" # A local folder to store the index
+
+    if not os.path.exists(index_folder):
+        os.makedirs(index_folder)
+        print(f"Created local directory: {index_folder}")
+
+    blob_service_client = BlobServiceClient.from_connection_string(connect_str)
+    container_client = blob_service_client.get_container_client(container_name)
+
+    for blob in container_client.list_blobs():
+        blob_client = container_client.get_blob_client(blob.name)
+        download_file_path = os.path.join(index_folder, blob.name)
+        print(f"Downloading {blob.name} to {download_file_path}")
+        with open(download_file_path, "wb") as download_file:
+            download_file.write(blob_client.download_blob().readall())
