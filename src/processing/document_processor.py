@@ -83,7 +83,7 @@ def load_and_parse_url(url: str, doc_id: str) -> Optional[Document]:
         metadata = {'source': url, 'id': doc_id}
 
         # Create and return a new Document object
-        return Document(page_content=cleaned_content, metadata=metadata)
+        return Document(page_content=cleaned_content, metadata=metadata,ID=doc_id)
 
     except Exception as e:
         # Log any exceptions that occur during the process

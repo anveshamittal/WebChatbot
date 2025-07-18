@@ -1,4 +1,4 @@
-import os
+import pathlib
 from fastapi import FastAPI
 from pydantic import BaseModel
 from src.llm.generate_answer import ask_question
@@ -8,10 +8,6 @@ app = FastAPI()
 generate_answer.setup_qa_chain()
 class questionreq(BaseModel):
     question:str
-@app.get("/")
-def read_root():
-    """A root endpoint to confirm the API is running."""
-    return {"message": "API is running. Send POST requests to /question."}
 
 @app.post("/question")
 def ask(request_data: questionreq):
@@ -25,19 +21,29 @@ async def process_csv_file():
     process_csv()
     return {}
 
-@app.get("/process_csv_file")
+@app.get("/delete_local_index")
 async def delete_local_index():
-    index_folder = "data/faiss_index" 
-    base_directory = os.path.dirname(index_folder)
-    for file_path in base_directory.iterdir():
+    """
+    Deletes all files within the specified local index folder.
+    """
+    # Use pathlib.Path for object-oriented filesystem paths
+    index_folder_path = pathlib.Path("data/faiss_index")
+
+    # Check if the directory exists to avoid errors
+    if not index_folder_path.exists():
+        print(f"Directory not found: {index_folder_path}")
+        return
+
+    print(f"Clearing files in: {index_folder_path}")
+    # Iterate through all entries in the directory
+    for entry in index_folder_path.iterdir():
         try:
-        # Check if the entry is a file
-            if file_path.is_file():
-                print(f"Deleting file: {file_path.name}")
-                # Delete the file
-                file_path.unlink()
+            # Check if the entry is a file before deleting
+            if entry.is_file():
+                print(f"Deleting file: {entry.name}")
+                entry.unlink()
         except Exception as e:
-            print(f"Error deleting {file_path.name}: {e}")
+            print(f"Error deleting {entry.name}: {e}")
 
 # def test():
 #     return "I can execute"

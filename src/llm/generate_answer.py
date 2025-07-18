@@ -13,6 +13,8 @@ from src.processing import document_processor
 from src.cloud_connectors import azure_handler
 load_dotenv()
 app_config = AppConfig()
+qa_chain = None
+
 def setup_qa_chain():
     """
     Loads all necessary components and creates the QA chain.
@@ -58,20 +60,19 @@ def setup_qa_chain():
     doc_chain = create_stuff_documents_chain(llm, prompt, output_parser=parser)
     
     # Create the final retrieval chain
-    retrieval_chain = create_retrieval_chain(index.as_retriever(), doc_chain)
+    qa_chain  = create_retrieval_chain(index.as_retriever(), doc_chain)
     
     print("QA chain is ready.")
-    return retrieval_chain
 
-# --- Main execution part ---
-
-# 1. Load the chain only once when your application starts.
-qa_chain = setup_qa_chain()
-
-def ask_question(query):
-    """
-    Asks a question using the pre-loaded QA chain.
-    """
-    # 2. Reuse the chain for every question.
+def ask_question(query: str):
+    """Asks a question using the pre-loaded QA chain."""
+    
+    # 3. Add a check to ensure the setup has been run.
+    if qa_chain is None:
+        raise RuntimeError("The QA chain has not been initialized. Please run setup_qa_chain() first.")
+    
+    # Use the module-level qa_chain variable
     result = qa_chain.invoke({"input": query})
-    return {'answer' : result["answer"], 'Sources':{doc.metadata['source'] for doc in result['context']}}
+    
+    sources = {doc.metadata['source'] for doc in result['context']}
+    return {'answer': result["answer"], 'Sources': sources}
