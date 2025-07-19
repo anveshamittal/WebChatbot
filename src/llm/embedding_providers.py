@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-class BaseAIWrapper(ABC):
+class EmbeddingModelProvider(ABC):
     """
     Abstract Base Class for all embedding model wrappers.
     Defines the contract for how to get an embedding instance.

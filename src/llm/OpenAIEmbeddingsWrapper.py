@@ -1,5 +1,5 @@
 from langchain_openai import OpenAIEmbeddings
-from src.llm.BaseAIWrapper import BaseAIWrapper
+from src.llm.embedding_providers import BaseAIWrapper
 
 import os
 

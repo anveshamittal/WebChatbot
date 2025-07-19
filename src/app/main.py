@@ -8,9 +8,11 @@ from pydantic import BaseModel
 from src.app_lifespan import lifespan
 from src.llm.chatbot import ChatBot
 from src.processing.process_csv import process_csv
+import logging
 
 # --- App Initialization ---
 app = FastAPI(lifespan=lifespan)
+logger = logging.getLogger(__name__)
 
 # --- Dependency Provider ---
 # This simple function gets the chatbot that the lifespan manager created
@@ -28,12 +30,12 @@ def get_root():
     return {"message": "I'm alive!"}
 
 @app.post("/question")
-def ask(
+async def ask(
     request_data: QuestionRequest,
     chatbot: ChatBot = Depends(get_chatbot)
 ):
     """Endpoint to ask a question using the injected chatbot instance."""
-    return chatbot.ask_question(request_data.question)
+    return await chatbot.aask_question(request_data.question)
 
 @app.get("/process_csv_file")
 async def process_csv_file():
@@ -52,10 +54,10 @@ def delete_index_files():
     """Contains the blocking logic for deleting files."""
     index_folder_path = pathlib.Path("data/faiss_index")
     if not index_folder_path.exists():
-        print(f"Directory not found: {index_folder_path}")
+        logger.info(f"Directory not found: {index_folder_path}")
         return {"status": "error", "message": "Directory not found."}
 
-    print(f"Clearing files in: {index_folder_path}")
+    logger.info(f"Clearing files in: {index_folder_path}")
     deleted_count = 0
     for entry in index_folder_path.iterdir():
         try:
@@ -63,5 +65,5 @@ def delete_index_files():
                 entry.unlink()
                 deleted_count += 1
         except Exception as e:
-            print(f"Error deleting {entry.name}: {e}")
+            logger.error(f"Error deleting {entry.name}: {e}")
     return {"status": "success", "files_deleted": deleted_count}

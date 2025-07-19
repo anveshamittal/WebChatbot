@@ -1,6 +1,6 @@
 from src.llm.HuggingFaceEmbeddingsWrapper import HuggingFaceEmbeddingsWrapper
 from src.llm.OpenAIEmbeddingsWrapper import OpenAIEmbeddingsWrapper
-from src.llm.BaseAIWrapper import BaseAIWrapper
+from src.llm.embedding_providers import BaseAIWrapper
 
 
 def get_embeddings_wrapper(model_type: str, model_name: str) -> BaseAIWrapper:

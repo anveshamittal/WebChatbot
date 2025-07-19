@@ -1,5 +1,5 @@
 from langchain_huggingface import HuggingFaceEmbeddings
-from src.llm.BaseAIWrapper import BaseAIWrapper
+from src.llm.embedding_providers import BaseAIWrapper
 
 class HuggingFaceEmbeddingsWrapper(BaseAIWrapper):
     """

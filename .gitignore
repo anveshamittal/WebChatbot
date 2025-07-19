@@ -1,6 +1,6 @@
 .env
 __pycache__/
 *.pyc
-/data/*
+/data/faiss_index/*
 .vscode
 .vs
