@@ -115,26 +115,3 @@ def create_text_splitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap
     )
-
-
-def initialize_embedding_model(model_provider: str, model_name: str) -> Embeddings:
-    """
-    Initializes and returns an instance of an embedding model.
-
-    This function acts as a wrapper for a provider-specific factory
-    (`get_embeddings_wrapper`) to instantiate a text embedding model,
-    abstracting away the details of its creation.
-
-    Args:
-        model_provider: The source of the embedding model (e.g., 'openai',
-                        'huggingface'). Renamed from 'model_type' for clarity.
-        model_name: The specific name of the model to initialize
-                    (e.g., 'text-embedding-3-small').
-
-    Returns:
-        A LangChain-compatible embedding model instance.
-    """
-    # The 'get_embeddings_wrapper' is assumed to return a builder object
-    # which can then provide the final embeddings instance.
-    embedding_provider = get_embeddings_wrapper(model_provider, model_name)
-    return embedding_provider.get_embeddings_instance()
