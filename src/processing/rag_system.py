@@ -2,24 +2,23 @@ from langchain_community.docstore import InMemoryDocstore
 import faiss
 from langchain_community.vectorstores import FAISS
 import os
-from  src.cloud_connectors import azure_handler
-from src.config_loader import AppConfig
+from  src.cloud_connectors import azure_storage
+from src.config import app_config
 # from langchain_community.vectorstores import faiss
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 class RAGSystem:
-    def __init__(self, container_client, embeddings, config:AppConfig):
+    def __init__(self, container_client, embeddings):
         self.container_client = container_client
         self.embeddings = embeddings
-        self.config = config
         self._load_vector_store()
 
     def _load_vector_store(self):
         """Loads the vector store from Azure or creates a new one."""
-        index, docstore, mapping = azure_handler.load_index_from_azure(
+        index, docstore, mapping = azure_storage.load_index_from_azure(
             self.container_client,
-            self.config.files['faiss_index_blob_name'],
-            self.config.files['datastore_blob_name']
+            app_config.files['faiss_index_blob_name'],
+            app_config.files['datastore_blob_name']
         )
         if index is not None and docstore is not None and mapping is not None:
             self.vector_store = FAISS(
@@ -30,7 +29,7 @@ class RAGSystem:
             )
         else:
             print("Creating a new vector store.")
-            index = faiss.IndexFlatL2(self.config.embedding['embedding_dimension'])
+            index = faiss.IndexFlatL2(app_config.embedding['embedding_dimension'])
             docstore = InMemoryDocstore({})
             mapping = {}
             self.vector_store = FAISS(
@@ -42,13 +41,13 @@ class RAGSystem:
 
     def save(self):
         """Saves the current vector store state to Azure."""
-        azure_handler.save_index_to_azure(
+        azure_storage.save_index_to_azure(
             self.container_client,
             self.vector_store.index,
             self.vector_store.docstore,
             self.vector_store.index_to_docstore_id,
-            self.config.files['faiss_index_blob_name'],
-            self.config.files['datastore_blob_name']
+            app_config.files['faiss_index_blob_name'],
+            app_config.files['datastore_blob_name']
         )
 
     # def add_documents(self, documents, text_splitter):

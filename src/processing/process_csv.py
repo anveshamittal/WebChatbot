@@ -1,22 +1,21 @@
 from src.processing import document_processor
 from src.processing.rag_system import RAGSystem
-from src.config_loader import AppConfig
-from src.cloud_connectors  import azure_handler
+from src.config import app_config
+from src.cloud_connectors  import azure_storage
 import os
 from dotenv import load_dotenv
 load_dotenv()
 
 def process_csv():
-    app_config = AppConfig()
     """Main function to run the RAG system update process."""
     # --- 1. Initialization ---
-    container_client = azure_handler.get_container_client(
+    container_client = azure_storage.get_container_client(
         os.getenv("AZURE_STORAGE_CONNECTION_STRING"),
         app_config.azure['container_name']
     )
 
  # --- 2. Load Instructions and Initialize RAG System ---
-    file = azure_handler.load_csv_from_azure(container_client, app_config.files['csv_blob_name'])
+    file = azure_storage.load_csv_from_azure(container_client, app_config.files['csv_blob_name'])
     if file is None:
         print("Exiting: Could not load CSV instruction file.")
         return
@@ -28,7 +27,7 @@ def process_csv():
         app_config.chunking['chunk_overlap']
     )
 
-    rag = RAGSystem(container_client, embeddings, AppConfig())
+    rag = RAGSystem(container_client, embeddings, app_config)
 
     # --- 3. Process Documents for Addition ---
     docs_to_add = []
@@ -49,6 +48,7 @@ def process_csv():
         rag.delete_documents(ids_to_delete)
 
     # --- 5. Save the final state ---
+
     if docs_to_add or ids_to_delete:
         rag.save()
         print("\nSaving updated index to Azure...")

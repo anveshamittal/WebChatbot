@@ -53,3 +53,7 @@ class AppConfig:
     @property
     def files(self) -> dict:
         return self._get_section('files')
+    
+# Create the single, shared instance that the rest of your app will import.
+# The YAML file is loaded here, but only once.
+app_config = AppConfig()
