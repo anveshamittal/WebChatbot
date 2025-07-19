@@ -1,7 +1,3 @@
-"""
-This module provides utility functions for loading, parsing, and processing
-web content for use in a RAG (Retrieval-Augmented Generation) pipeline.
-"""
 
 # Standard library imports
 import re
@@ -13,9 +9,6 @@ from langchain_community.document_loaders import WebBaseLoader
 from langchain_core.documents import Document
 from langchain_core.embeddings import Embeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-
-# Local application imports
-from src.llm.get_ai_model import get_embeddings_wrapper
 
 
 def _clean_text(text: str) -> str:
