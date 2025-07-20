@@ -1,0 +1,2380 @@
+2025-07-20 14:04:31,499 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:04:31,499 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:05:18,493 - sentence_transformers.SentenceTransformer - SentenceTransformer - 219 - INFO - Use pytorch device_name: cpu
+2025-07-20 14:05:18,494 - sentence_transformers.SentenceTransformer - SentenceTransformer - 227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-20 14:05:18,502 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-20 14:05:18,933 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:05:19,021 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:05:19,319 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:05:19,369 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:05:19,707 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:05:19,760 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:05:20,049 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-20 14:05:20,101 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-20 14:05:20,450 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:05:20,534 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:05:20,818 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-20 14:05:20,868 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-20 14:05:21,166 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-20 14:05:21,461 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-20 14:05:21,528 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-20 14:05:24,895 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-20 14:05:24,952 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-20 14:05:25,298 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-20 14:05:25,667 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-20 14:05:25,726 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-20 14:05:26,013 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-20 14:07:04,312 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:07:04,313 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:07:11,828 - sentence_transformers.SentenceTransformer - SentenceTransformer - 219 - INFO - Use pytorch device_name: cpu
+2025-07-20 14:07:11,828 - sentence_transformers.SentenceTransformer - SentenceTransformer - 227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-20 14:07:11,828 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-20 14:07:12,245 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:07:12,295 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:07:12,580 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:07:12,629 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:07:12,906 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:07:12,961 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:07:13,227 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-20 14:07:13,273 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-20 14:07:13,559 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:07:13,607 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:07:13,865 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-20 14:07:13,912 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-20 14:07:14,209 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-20 14:07:14,468 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-20 14:07:14,519 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-20 14:07:16,029 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-20 14:07:16,078 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-20 14:07:16,344 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-20 14:07:16,640 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-20 14:07:16,700 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-20 14:07:17,024 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-20 14:07:56,693 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:07:56,695 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:08:04,020 - sentence_transformers.SentenceTransformer - SentenceTransformer - 219 - INFO - Use pytorch device_name: cpu
+2025-07-20 14:08:04,020 - sentence_transformers.SentenceTransformer - SentenceTransformer - 227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-20 14:08:04,042 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-20 14:08:04,425 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:08:04,472 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:08:04,776 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:08:04,826 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:08:05,114 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:08:05,161 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:08:05,451 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-20 14:08:05,492 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-20 14:08:06,265 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:08:06,308 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:08:06,593 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-20 14:08:06,635 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-20 14:08:06,914 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-20 14:08:07,202 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-20 14:08:07,237 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-20 14:08:08,760 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-20 14:08:08,796 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-20 14:08:09,077 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-20 14:08:09,429 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-20 14:08:09,475 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-20 14:08:09,776 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-20 14:08:54,139 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:08:54,155 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:09:01,516 - sentence_transformers.SentenceTransformer - SentenceTransformer - 219 - INFO - Use pytorch device_name: cpu
+2025-07-20 14:09:01,516 - sentence_transformers.SentenceTransformer - SentenceTransformer - 227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-20 14:09:01,521 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-20 14:09:02,405 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:09:02,452 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:09:02,753 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:09:02,802 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:09:03,079 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:09:03,126 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:09:03,549 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-20 14:09:03,580 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-20 14:09:03,852 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:09:03,910 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:09:04,650 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-20 14:09:04,690 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-20 14:09:04,969 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-20 14:09:05,690 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-20 14:09:05,735 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-20 14:09:07,287 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-20 14:09:07,328 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-20 14:09:07,599 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-20 14:09:07,906 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-20 14:09:07,952 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-20 14:09:08,226 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-20 14:11:00,479 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:11:00,479 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:11:39,544 - sentence_transformers.SentenceTransformer - SentenceTransformer - 219 - INFO - Use pytorch device_name: cpu
+2025-07-20 14:11:39,544 - sentence_transformers.SentenceTransformer - SentenceTransformer - 227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-20 14:11:39,560 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-20 14:11:40,407 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:11:40,457 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:11:40,730 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:11:40,763 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:11:41,046 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:11:41,096 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:11:41,377 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-20 14:11:41,424 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-20 14:11:41,694 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:11:41,742 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:11:42,045 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-20 14:11:42,078 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-20 14:11:42,369 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-20 14:11:42,654 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-20 14:11:42,702 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-20 14:11:44,223 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-20 14:11:44,267 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-20 14:11:44,961 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-20 14:11:45,279 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-20 14:11:45,324 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-20 14:11:45,625 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-20 14:11:45,642 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5e38f8b2-6545-11f0-8234-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:11:45,642 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:11:46,045 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:11:46,046 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e675c5e0-801e-0070-0c52-f9a91a000000'
+    'x-ms-client-request-id': '5e38f8b2-6545-11f0-8234-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 08:41:44 GMT'
+2025-07-20 14:11:46,060 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:11:46,060 - src.cloud_connectors.azure_storage - azure_storage - 61 - INFO - Downloading index files to 'data/faiss_index'...
+2025-07-20 14:11:46,067 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED&comp=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5e79a6b2-6545-11f0-850f-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:11:46,145 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files?restype=container&comp=list HTTP/1.1" 200 None
+2025-07-20 14:11:46,248 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e675c5f3-801e-0070-1a52-f9a91a000000'
+    'x-ms-client-request-id': '5e79a6b2-6545-11f0-850f-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 08:41:45 GMT'
+2025-07-20 14:11:46,252 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading data.csv...
+2025-07-20 14:11:46,255 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5e967d14-6545-11f0-af8f-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:11:46,379 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/data.csv HTTP/1.1" 206 91
+2025-07-20 14:11:46,379 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '91'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:28 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601A290AA5D"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e675c61b-801e-0070-3e52-f9a91a000000'
+    'x-ms-client-request-id': '5e967d14-6545-11f0-af8f-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 08:41:45 GMT'
+2025-07-20 14:11:46,393 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.faiss...
+2025-07-20 14:11:46,394 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5eabb135-6545-11f0-a46d-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:11:46,514 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.faiss HTTP/1.1" 206 582189
+2025-07-20 14:11:46,514 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e675c642-801e-0070-5e52-f9a91a000000'
+    'x-ms-client-request-id': '5eabb135-6545-11f0-a46d-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 08:41:45 GMT'
+2025-07-20 14:11:46,973 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.pkl...
+2025-07-20 14:11:46,974 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5f042f20-6545-11f0-92d9-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:11:47,063 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.pkl HTTP/1.1" 206 187966
+2025-07-20 14:11:47,078 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e675c6b0-801e-0070-3452-f9a91a000000'
+    'x-ms-client-request-id': '5f042f20-6545-11f0-92d9-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 08:41:46 GMT'
+2025-07-20 14:11:47,290 - src.cloud_connectors.azure_storage - azure_storage - 73 - INFO - Download complete.
+2025-07-20 14:11:48,394 - src.llm.chatbot - chatbot - 38 - INFO - Building the QA chain...
+2025-07-20 14:11:48,403 - src.llm.chatbot - chatbot - 41 - INFO - QA chain is ready.
+2025-07-20 14:11:48,405 - src.app_lifespan - app_lifespan - 74 - INFO - ChatBot has been initialized and stored in app state.
+2025-07-20 14:13:00,396 - openai._base_client - _base_client - 482 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-dbc015fc-c934-4faa-b0ed-dc1fecf4957b', 'json_data': {'messages': [{'content': "You are a helpful assistant for tietoevry company. if you do not know the answer say i don't know the answer please contact us on https://www.tietoevry.com/en/contact-tietoevry/\n            Data:\n            New White Paper: Optimal Approaches to ATM Pooling\nOur insights\nOptimal Approaches to ATM Pooling\nNew white paper on ATM Pooling: a cost-effective solution for a new cash reality\n\nTietoevry at your service\n\nNew White Paper: Optimal Approaches to ATM Pooling\nOur insights\nOptimal Approaches to ATM Pooling\nNew white paper on ATM Pooling: a cost-effective solution for a new cash reality\n\nTietoevry at your service\n\nThus, optimizing such routine processes has a significant impact. We also plan to address other challenges with this solution in the regulatory and quality control departments”.\n\nknowledge of local healthcare practices, regulatory requirements, language, and clinical workflows ensuring our solutions are truly fit for purpose. At the same time, we also work through other models when entering new markets, depending on the context and market specific needs.\n            Question: Tips?\n            Answer:", 'role': 'user'}], 'model': 'gpt-4o-mini-custom', 'stream': False}}
+2025-07-20 14:13:00,396 - openai._base_client - _base_client - 1515 - DEBUG - Sending HTTP Request: POST https://azure-open-ai-custom.openai.azure.com/openai/v1/chat/completions?api-version=preview
+2025-07-20 14:13:00,396 - httpcore.connection - _trace - 87 - DEBUG - connect_tcp.started host='azure-open-ai-custom.openai.azure.com' port=443 local_address=None timeout=None socket_options=None
+2025-07-20 14:13:00,793 - httpcore.connection - _trace - 87 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001361F10BDD0>
+2025-07-20 14:13:00,793 - httpcore.connection - _trace - 87 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001361E00A2A0> server_hostname='azure-open-ai-custom.openai.azure.com' timeout=None
+2025-07-20 14:13:01,298 - httpcore.connection - _trace - 87 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001361F1B7C50>
+2025-07-20 14:13:01,298 - httpcore.http11 - _trace - 87 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-07-20 14:13:01,298 - httpcore.http11 - _trace - 87 - DEBUG - send_request_headers.complete
+2025-07-20 14:13:01,298 - httpcore.http11 - _trace - 87 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-07-20 14:13:01,298 - httpcore.http11 - _trace - 87 - DEBUG - send_request_body.complete
+2025-07-20 14:13:01,298 - httpcore.http11 - _trace - 87 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-07-20 14:13:02,076 - httpcore.http11 - _trace - 87 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Length', b'1181'), (b'Content-Type', b'application/json'), (b'apim-request-id', b'bd055ea3-b7b9-4dba-8e0b-b4e6254b7173'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'x-content-type-options', b'nosniff'), (b'x-ms-region', b'East US'), (b'x-ratelimit-remaining-requests', b'209'), (b'x-ratelimit-limit-requests', b'210'), (b'x-ratelimit-remaining-tokens', b'20717'), (b'x-ratelimit-limit-tokens', b'21000'), (b'azureml-model-session', b'd064-20250625072000'), (b'cmp-upstream-response-duration', b'289'), (b'x-accel-buffering', b'no'), (b'x-ms-rai-invoked', b'true'), (b'x-request-id', b'8a7b9223-b893-4262-ae90-6e423955b8fd'), (b'x-ms-client-request-id', b'Not-Set'), (b'x-ms-deployment-name', b'gpt-4o-mini-custom'), (b'Date', b'Sun, 20 Jul 2025 08:43:01 GMT')])
+2025-07-20 14:13:02,076 - httpx - _client - 1740 - INFO - HTTP Request: POST https://azure-open-ai-custom.openai.azure.com/openai/v1/chat/completions?api-version=preview "HTTP/1.1 200 OK"
+2025-07-20 14:13:02,076 - httpcore.http11 - _trace - 87 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-07-20 14:13:02,076 - httpcore.http11 - _trace - 87 - DEBUG - receive_response_body.complete
+2025-07-20 14:13:02,084 - httpcore.http11 - _trace - 87 - DEBUG - response_closed.started
+2025-07-20 14:13:02,084 - httpcore.http11 - _trace - 87 - DEBUG - response_closed.complete
+2025-07-20 14:13:02,084 - openai._base_client - _base_client - 1553 - DEBUG - HTTP Response: POST https://azure-open-ai-custom.openai.azure.com/openai/v1/chat/completions?api-version=preview "200 OK" Headers({'content-length': '1181', 'content-type': 'application/json', 'apim-request-id': 'bd055ea3-b7b9-4dba-8e0b-b4e6254b7173', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'x-ms-region': 'East US', 'x-ratelimit-remaining-requests': '209', 'x-ratelimit-limit-requests': '210', 'x-ratelimit-remaining-tokens': '20717', 'x-ratelimit-limit-tokens': '21000', 'azureml-model-session': 'd064-20250625072000', 'cmp-upstream-response-duration': '289', 'x-accel-buffering': 'no', 'x-ms-rai-invoked': 'true', 'x-request-id': '8a7b9223-b893-4262-ae90-6e423955b8fd', 'x-ms-client-request-id': 'Not-Set', 'x-ms-deployment-name': 'gpt-4o-mini-custom', 'date': 'Sun, 20 Jul 2025 08:43:01 GMT'})
+2025-07-20 14:13:02,084 - openai._base_client - _base_client - 1561 - DEBUG - request_id: 8a7b9223-b893-4262-ae90-6e423955b8fd
+2025-07-20 14:13:22,908 - openai._base_client - _base_client - 482 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-40adf6b5-9641-4479-9df0-e54549b6b099', 'json_data': {'messages': [{'content': "You are a helpful assistant for tietoevry company. if you do not know the answer say i don't know the answer please contact us on https://www.tietoevry.com/en/contact-tietoevry/\n            Data:\n            Tietoevry Banking is a leading provider to the financial sector in the Nordics and globally, offering solutions in core banking, credit, fraud prevention, transaction banking, and wealth management. With more than 3,500 experts, the company helps financial institutions improve both agility and efficiency.\nThe new face of fraud: Emotion and precision\n\nTietoevry Banking is a leading provider to the financial sector in the Nordics and globally, offering solutions in core banking, credit, fraud prevention, transaction banking, and wealth management. With more than 3,500 experts, the company helps financial institutions improve both agility and efficiency.\nThe new face of fraud: Emotion and precision\n\nMarket dynamics: It can also be envisioned that a supplier wholly outside EU jurisdiction, sending e-invoices to a customer in the EU, may be commercially pressured by the buyer to issue e-invoices complying with EN16931 for a better fit with the customer’s ViDA-compliant platforms and processes.\nWhat is Tietoevry doing, and how will you benefit?\n\nMarket dynamics: It can also be envisioned that a supplier wholly outside EU jurisdiction, sending e-invoices to a customer in the EU, may be commercially pressured by the buyer to issue e-invoices complying with EN16931 for a better fit with the customer’s ViDA-compliant platforms and processes.\nWhat is Tietoevry doing, and how will you benefit?\n            Question: Tietoevry\n            Answer:", 'role': 'user'}], 'model': 'gpt-4o-mini-custom', 'stream': False}}
+2025-07-20 14:13:22,922 - openai._base_client - _base_client - 1515 - DEBUG - Sending HTTP Request: POST https://azure-open-ai-custom.openai.azure.com/openai/v1/chat/completions?api-version=preview
+2025-07-20 14:13:22,925 - httpcore.connection - _trace - 87 - DEBUG - close.started
+2025-07-20 14:13:22,925 - httpcore.connection - _trace - 87 - DEBUG - close.complete
+2025-07-20 14:13:22,925 - httpcore.connection - _trace - 87 - DEBUG - connect_tcp.started host='azure-open-ai-custom.openai.azure.com' port=443 local_address=None timeout=None socket_options=None
+2025-07-20 14:13:23,191 - httpcore.connection - _trace - 87 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001361F419990>
+2025-07-20 14:13:23,191 - httpcore.connection - _trace - 87 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001361E00A2A0> server_hostname='azure-open-ai-custom.openai.azure.com' timeout=None
+2025-07-20 14:13:23,774 - httpcore.connection - _trace - 87 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001361F1DA450>
+2025-07-20 14:13:23,774 - httpcore.http11 - _trace - 87 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-07-20 14:13:23,790 - httpcore.http11 - _trace - 87 - DEBUG - send_request_headers.complete
+2025-07-20 14:13:23,791 - httpcore.http11 - _trace - 87 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-07-20 14:13:23,791 - httpcore.http11 - _trace - 87 - DEBUG - send_request_body.complete
+2025-07-20 14:13:23,791 - httpcore.http11 - _trace - 87 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-07-20 14:13:24,827 - httpcore.http11 - _trace - 87 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Length', b'1624'), (b'Content-Type', b'application/json'), (b'apim-request-id', b'f9077074-879a-4d75-9f99-d9da3b0b45b0'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'x-content-type-options', b'nosniff'), (b'x-ms-region', b'East US'), (b'x-ratelimit-remaining-requests', b'208'), (b'x-ratelimit-limit-requests', b'210'), (b'x-ratelimit-remaining-tokens', b'20300'), (b'x-ratelimit-limit-tokens', b'21000'), (b'azureml-model-session', b'd067-20250702021310'), (b'cmp-upstream-response-duration', b'639'), (b'x-accel-buffering', b'no'), (b'x-ms-rai-invoked', b'true'), (b'x-request-id', b'19fb66d7-dfbc-4abd-ae79-27216c29041e'), (b'x-ms-client-request-id', b'Not-Set'), (b'x-ms-deployment-name', b'gpt-4o-mini-custom'), (b'Date', b'Sun, 20 Jul 2025 08:43:24 GMT')])
+2025-07-20 14:13:24,827 - httpx - _client - 1740 - INFO - HTTP Request: POST https://azure-open-ai-custom.openai.azure.com/openai/v1/chat/completions?api-version=preview "HTTP/1.1 200 OK"
+2025-07-20 14:13:24,829 - httpcore.http11 - _trace - 87 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-07-20 14:13:24,830 - httpcore.http11 - _trace - 87 - DEBUG - receive_response_body.complete
+2025-07-20 14:13:24,831 - httpcore.http11 - _trace - 87 - DEBUG - response_closed.started
+2025-07-20 14:13:24,831 - httpcore.http11 - _trace - 87 - DEBUG - response_closed.complete
+2025-07-20 14:13:24,831 - openai._base_client - _base_client - 1553 - DEBUG - HTTP Response: POST https://azure-open-ai-custom.openai.azure.com/openai/v1/chat/completions?api-version=preview "200 OK" Headers({'content-length': '1624', 'content-type': 'application/json', 'apim-request-id': 'f9077074-879a-4d75-9f99-d9da3b0b45b0', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'x-ms-region': 'East US', 'x-ratelimit-remaining-requests': '208', 'x-ratelimit-limit-requests': '210', 'x-ratelimit-remaining-tokens': '20300', 'x-ratelimit-limit-tokens': '21000', 'azureml-model-session': 'd067-20250702021310', 'cmp-upstream-response-duration': '639', 'x-accel-buffering': 'no', 'x-ms-rai-invoked': 'true', 'x-request-id': '19fb66d7-dfbc-4abd-ae79-27216c29041e', 'x-ms-client-request-id': 'Not-Set', 'x-ms-deployment-name': 'gpt-4o-mini-custom', 'date': 'Sun, 20 Jul 2025 08:43:24 GMT'})
+2025-07-20 14:13:24,831 - openai._base_client - _base_client - 1561 - DEBUG - request_id: 19fb66d7-dfbc-4abd-ae79-27216c29041e
+2025-07-20 14:13:42,815 - src.processing.batch_processor - batch_processor - 98 - INFO - Starting batch ingestion process...
+2025-07-20 14:13:42,815 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'a4102deb-6545-11f0-9b19-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:13:42,823 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:13:43,224 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:13:43,224 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cc4a5ca0-801e-0060-2452-f96c72000000'
+    'x-ms-client-request-id': 'a4102deb-6545-11f0-9b19-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 08:43:42 GMT'
+2025-07-20 14:13:43,239 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:16:44,497 - src.processing.batch_processor - batch_processor - 98 - INFO - Starting batch ingestion process...
+2025-07-20 14:16:44,504 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '105ba0df-6546-11f0-bb2a-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:16:44,513 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:16:44,864 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:16:44,864 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '13614070-501e-005c-4e52-f945b5000000'
+    'x-ms-client-request-id': '105ba0df-6546-11f0-bb2a-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 08:46:44 GMT'
+2025-07-20 14:16:44,864 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:24:21,489 - src.app_lifespan - app_lifespan - 79 - INFO - Application shutdown: Cleaning up resources.
+2025-07-20 14:24:43,321 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:24:43,322 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:27:56,208 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:27:56,208 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:28:41,701 - sentence_transformers.SentenceTransformer - SentenceTransformer - 219 - INFO - Use pytorch device_name: cpu
+2025-07-20 14:28:41,701 - sentence_transformers.SentenceTransformer - SentenceTransformer - 227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-20 14:28:41,705 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-20 14:28:42,577 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:28:42,613 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:28:43,326 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:28:43,391 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:28:43,708 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:28:43,766 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:28:44,033 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-20 14:28:44,097 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-20 14:28:44,375 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:28:44,426 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:28:44,693 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-20 14:28:44,741 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-20 14:28:45,015 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-20 14:28:45,300 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-20 14:28:45,345 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-20 14:28:46,875 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-20 14:28:46,908 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-20 14:28:47,191 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-20 14:28:47,507 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-20 14:28:47,554 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-20 14:28:48,352 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-20 14:28:48,374 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'bfd16178-6547-11f0-b0b5-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:28:48,374 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:28:48,723 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:28:48,723 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'ca17f790-101e-004d-5d54-f9df01000000'
+    'x-ms-client-request-id': 'bfd16178-6547-11f0-b0b5-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 08:58:47 GMT'
+2025-07-20 14:28:48,730 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:28:48,730 - src.cloud_connectors.azure_storage - azure_storage - 61 - INFO - Downloading index files to 'data/faiss_index'...
+2025-07-20 14:28:48,735 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED&comp=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c0087b59-6547-11f0-bd74-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:28:48,845 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files?restype=container&comp=list HTTP/1.1" 200 None
+2025-07-20 14:28:48,939 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'ca17f7c5-101e-004d-0f54-f9df01000000'
+    'x-ms-client-request-id': 'c0087b59-6547-11f0-bd74-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 08:58:47 GMT'
+2025-07-20 14:28:48,945 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading data.csv...
+2025-07-20 14:28:48,948 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c028fc77-6547-11f0-9ae4-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:28:49,035 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/data.csv HTTP/1.1" 206 91
+2025-07-20 14:28:49,036 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '91'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:28 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601A290AA5D"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'ca17f84d-101e-004d-0954-f9df01000000'
+    'x-ms-client-request-id': 'c028fc77-6547-11f0-9ae4-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 08:58:47 GMT'
+2025-07-20 14:28:49,040 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.faiss...
+2025-07-20 14:28:49,041 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c0372d00-6547-11f0-90d5-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:28:49,143 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.faiss HTTP/1.1" 206 582189
+2025-07-20 14:28:49,144 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'ca17f87b-101e-004d-2f54-f9df01000000'
+    'x-ms-client-request-id': 'c0372d00-6547-11f0-90d5-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 08:58:47 GMT'
+2025-07-20 14:28:49,494 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.pkl...
+2025-07-20 14:28:49,501 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'c07d7b1c-6547-11f0-b3f9-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:28:49,607 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.pkl HTTP/1.1" 206 187966
+2025-07-20 14:28:49,608 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'ca17f9da-101e-004d-5654-f9df01000000'
+    'x-ms-client-request-id': 'c07d7b1c-6547-11f0-b3f9-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 08:58:48 GMT'
+2025-07-20 14:28:49,629 - src.cloud_connectors.azure_storage - azure_storage - 73 - INFO - Download complete.
+2025-07-20 14:28:50,615 - src.llm.chatbot - chatbot - 38 - INFO - Building the QA chain...
+2025-07-20 14:28:50,624 - src.llm.chatbot - chatbot - 41 - INFO - QA chain is ready.
+2025-07-20 14:28:50,628 - src.app_lifespan - app_lifespan - 74 - INFO - ChatBot has been initialized and stored in app state.
+2025-07-20 14:29:21,655 - src.processing.batch_processor - batch_processor - 98 - INFO - Starting batch ingestion process...
+2025-07-20 14:29:21,655 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'd3a7d1c7-6547-11f0-a075-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:29:21,669 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:29:21,973 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:29:21,973 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3a7fd59c-101e-0010-2454-f9d585000000'
+    'x-ms-client-request-id': 'd3a7d1c7-6547-11f0-a075-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 08:59:21 GMT'
+2025-07-20 14:29:21,979 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:29:34,136 - src.processing.vector_store_repository - vector_store_repository - 22 - INFO - Attempting to load vector store from Azure...
+2025-07-20 14:29:46,587 - src.app_lifespan - app_lifespan - 79 - INFO - Application shutdown: Cleaning up resources.
+2025-07-20 14:34:42,195 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:34:42,196 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:34:52,021 - sentence_transformers.SentenceTransformer - SentenceTransformer - 219 - INFO - Use pytorch device_name: cpu
+2025-07-20 14:34:52,021 - sentence_transformers.SentenceTransformer - SentenceTransformer - 227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-20 14:34:52,021 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-20 14:34:52,452 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:34:52,498 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:34:52,776 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:34:52,828 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:34:53,116 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:34:53,166 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:34:53,440 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-20 14:34:53,492 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-20 14:34:53,775 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:34:53,822 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:34:54,265 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-20 14:34:54,313 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-20 14:34:54,602 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-20 14:34:54,886 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-20 14:34:54,949 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-20 14:34:56,471 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-20 14:34:56,533 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-20 14:34:56,803 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-20 14:34:57,117 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-20 14:34:57,186 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-20 14:34:57,493 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-20 14:34:57,514 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '9bd7981e-6548-11f0-9df5-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:34:57,518 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:34:57,910 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:34:57,910 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'ccc92775-c01e-0061-0755-f933ae000000'
+    'x-ms-client-request-id': '9bd7981e-6548-11f0-9df5-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 09:04:56 GMT'
+2025-07-20 14:34:57,918 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:34:57,920 - src.cloud_connectors.azure_storage - azure_storage - 61 - INFO - Downloading index files to 'data/faiss_index'...
+2025-07-20 14:34:57,920 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED&comp=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '9c15be70-6548-11f0-8152-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:34:58,056 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files?restype=container&comp=list HTTP/1.1" 200 None
+2025-07-20 14:34:58,176 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'ccc92799-c01e-0061-2855-f933ae000000'
+    'x-ms-client-request-id': '9c15be70-6548-11f0-8152-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:04:56 GMT'
+2025-07-20 14:34:58,182 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading data.csv...
+2025-07-20 14:34:58,189 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '9c3e922f-6548-11f0-901c-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:34:58,270 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/data.csv HTTP/1.1" 206 91
+2025-07-20 14:34:58,271 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '91'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:28 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601A290AA5D"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'ccc927d9-c01e-0061-6255-f933ae000000'
+    'x-ms-client-request-id': '9c3e922f-6548-11f0-901c-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:04:57 GMT'
+2025-07-20 14:34:58,273 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.faiss...
+2025-07-20 14:34:58,274 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '9c4bc427-6548-11f0-9868-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:34:58,437 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.faiss HTTP/1.1" 206 582189
+2025-07-20 14:34:58,437 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'ccc927f8-c01e-0061-7955-f933ae000000'
+    'x-ms-client-request-id': '9c4bc427-6548-11f0-9868-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:04:57 GMT'
+2025-07-20 14:34:58,882 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.pkl...
+2025-07-20 14:34:58,882 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '9ca887ad-6548-11f0-a8ff-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:34:58,983 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.pkl HTTP/1.1" 206 187966
+2025-07-20 14:34:58,984 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'ccc92889-c01e-0061-7855-f933ae000000'
+    'x-ms-client-request-id': '9ca887ad-6548-11f0-a8ff-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:04:57 GMT'
+2025-07-20 14:34:59,041 - src.cloud_connectors.azure_storage - azure_storage - 73 - INFO - Download complete.
+2025-07-20 14:35:00,029 - src.llm.chatbot - chatbot - 38 - INFO - Building the QA chain...
+2025-07-20 14:35:00,037 - src.llm.chatbot - chatbot - 41 - INFO - QA chain is ready.
+2025-07-20 14:35:00,037 - src.app_lifespan - app_lifespan - 74 - INFO - ChatBot has been initialized and stored in app state.
+2025-07-20 14:35:41,169 - src.processing.batch_processor - batch_processor - 98 - INFO - Starting batch ingestion process...
+2025-07-20 14:35:41,185 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'b5df7a32-6548-11f0-b31e-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:35:41,186 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:35:41,455 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:35:41,470 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '750d08b8-d01e-000f-5155-f96681000000'
+    'x-ms-client-request-id': 'b5df7a32-6548-11f0-b31e-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 09:05:40 GMT'
+2025-07-20 14:35:41,472 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:35:50,062 - src.processing.vector_store_repository - vector_store_repository - 22 - INFO - Attempting to load vector store from Azure...
+2025-07-20 14:37:35,736 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:37:35,736 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:37:45,969 - sentence_transformers.SentenceTransformer - SentenceTransformer - 219 - INFO - Use pytorch device_name: cpu
+2025-07-20 14:37:45,969 - sentence_transformers.SentenceTransformer - SentenceTransformer - 227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-20 14:37:45,969 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-20 14:37:46,875 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:37:46,923 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:37:47,694 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:37:47,749 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:37:48,052 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:37:48,267 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:37:48,997 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-20 14:37:49,072 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-20 14:37:49,333 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:37:49,404 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:37:49,666 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-20 14:37:49,713 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-20 14:37:50,439 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-20 14:37:50,703 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-20 14:37:50,753 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-20 14:37:52,301 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-20 14:37:52,346 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-20 14:37:52,629 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-20 14:37:52,922 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-20 14:37:52,976 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-20 14:37:53,263 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-20 14:37:53,287 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '049c7ea2-6549-11f0-965b-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:37:53,290 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:37:53,658 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:37:53,661 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '9ad60eff-a01e-0077-5b55-f9c579000000'
+    'x-ms-client-request-id': '049c7ea2-6549-11f0-965b-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 09:07:53 GMT'
+2025-07-20 14:37:53,665 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:37:53,666 - src.cloud_connectors.azure_storage - azure_storage - 61 - INFO - Downloading index files to 'data/faiss_index'...
+2025-07-20 14:37:53,667 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED&comp=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '04d68349-6549-11f0-91d0-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:37:53,745 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files?restype=container&comp=list HTTP/1.1" 200 None
+2025-07-20 14:37:53,844 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '9ad60f1a-a01e-0077-7055-f9c579000000'
+    'x-ms-client-request-id': '04d68349-6549-11f0-91d0-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:07:53 GMT'
+2025-07-20 14:37:53,844 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading data.csv...
+2025-07-20 14:37:53,863 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '04f456f2-6549-11f0-96e7-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:37:53,954 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/data.csv HTTP/1.1" 206 91
+2025-07-20 14:37:53,956 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '91'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:28 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601A290AA5D"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '9ad60f57-a01e-0077-2555-f9c579000000'
+    'x-ms-client-request-id': '04f456f2-6549-11f0-96e7-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:07:53 GMT'
+2025-07-20 14:37:53,958 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.faiss...
+2025-07-20 14:37:53,960 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '0503539c-6549-11f0-b8cc-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:37:54,062 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.faiss HTTP/1.1" 206 582189
+2025-07-20 14:37:54,062 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '9ad60f7c-a01e-0077-4655-f9c579000000'
+    'x-ms-client-request-id': '0503539c-6549-11f0-b8cc-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:07:53 GMT'
+2025-07-20 14:37:54,422 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.pkl...
+2025-07-20 14:37:54,424 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '0549f984-6549-11f0-9322-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:37:54,512 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.pkl HTTP/1.1" 206 187966
+2025-07-20 14:37:54,512 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '9ad6101e-a01e-0077-5d55-f9c579000000'
+    'x-ms-client-request-id': '0549f984-6549-11f0-9322-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:07:53 GMT'
+2025-07-20 14:37:54,512 - src.cloud_connectors.azure_storage - azure_storage - 73 - INFO - Download complete.
+2025-07-20 14:37:55,496 - src.llm.chatbot - chatbot - 38 - INFO - Building the QA chain...
+2025-07-20 14:37:55,496 - src.llm.chatbot - chatbot - 41 - INFO - QA chain is ready.
+2025-07-20 14:37:55,496 - src.app_lifespan - app_lifespan - 74 - INFO - ChatBot has been initialized and stored in app state.
+2025-07-20 14:38:46,653 - src.processing.batch_processor - batch_processor - 98 - INFO - Starting batch ingestion process...
+2025-07-20 14:38:46,653 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '246b9038-6549-11f0-abd1-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:38:46,658 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:38:46,995 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:38:46,997 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'b7eded95-301e-0075-1f55-f97bc1000000'
+    'x-ms-client-request-id': '246b9038-6549-11f0-abd1-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 09:08:46 GMT'
+2025-07-20 14:38:46,999 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:38:54,825 - src.processing.vector_store_repository - vector_store_repository - 22 - INFO - Attempting to load vector store from Azure...
+2025-07-20 14:38:54,825 - src.cloud_connectors.azure_storage - azure_storage - 104 - INFO - Attempting to download blob 'index.faiss' as bytes...
+2025-07-20 14:38:54,825 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '294a9b7e-6549-11f0-bc23-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:38:54,914 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "HEAD /ai-files/index.faiss HTTP/1.1" 200 0
+2025-07-20 14:38:54,915 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Vary': 'REDACTED'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'b7edf552-301e-0075-6255-f97bc1000000'
+    'x-ms-client-request-id': '294a9b7e-6549-11f0-bc23-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:08:54 GMT'
+2025-07-20 14:38:54,917 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '29588e55-6549-11f0-9ce4-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:38:55,025 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.faiss HTTP/1.1" 206 582189
+2025-07-20 14:38:55,026 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'b7edf56e-301e-0075-7855-f97bc1000000'
+    'x-ms-client-request-id': '29588e55-6549-11f0-9ce4-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:08:54 GMT'
+2025-07-20 14:38:55,693 - src.cloud_connectors.azure_storage - azure_storage - 104 - INFO - Attempting to download blob 'index.pkl' as bytes...
+2025-07-20 14:38:55,693 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '29cef264-6549-11f0-ac72-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:38:55,784 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "HEAD /ai-files/index.pkl HTTP/1.1" 200 0
+2025-07-20 14:38:55,784 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Vary': 'REDACTED'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'b7edf63a-301e-0075-1d55-f97bc1000000'
+    'x-ms-client-request-id': '29cef264-6549-11f0-ac72-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:08:55 GMT'
+2025-07-20 14:38:55,788 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '29dd29de-6549-11f0-b302-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:38:55,864 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.pkl HTTP/1.1" 206 187966
+2025-07-20 14:38:55,864 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'b7edf651-301e-0075-3055-f97bc1000000'
+    'x-ms-client-request-id': '29dd29de-6549-11f0-b302-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:08:55 GMT'
+2025-07-20 14:38:55,942 - src.processing.vector_store_repository - vector_store_repository - 28 - INFO - Found existing index in Azure. Loading into memory.
+2025-07-20 14:39:59,753 - src.app_lifespan - app_lifespan - 79 - INFO - Application shutdown: Cleaning up resources.
+2025-07-20 14:40:09,224 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:40:09,224 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:41:13,169 - sentence_transformers.SentenceTransformer - SentenceTransformer - 219 - INFO - Use pytorch device_name: cpu
+2025-07-20 14:41:13,169 - sentence_transformers.SentenceTransformer - SentenceTransformer - 227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-20 14:41:13,179 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-20 14:41:14,100 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:41:14,153 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:41:14,900 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:41:14,951 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:41:15,267 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:41:15,373 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:41:15,648 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-20 14:41:15,689 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-20 14:41:15,976 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:41:16,042 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:41:16,318 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-20 14:41:16,366 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-20 14:41:16,661 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-20 14:41:16,996 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-20 14:41:17,044 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-20 14:41:18,632 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-20 14:41:18,678 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-20 14:41:18,981 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-20 14:41:19,711 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-20 14:41:19,748 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-20 14:41:20,049 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-20 14:41:20,065 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '7fdc7699-6549-11f0-a6ff-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:41:20,065 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:41:20,445 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:41:20,445 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cf55e9ce-601e-0078-0456-f9b315000000'
+    'x-ms-client-request-id': '7fdc7699-6549-11f0-a6ff-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 09:11:19 GMT'
+2025-07-20 14:41:20,445 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:41:20,445 - src.cloud_connectors.azure_storage - azure_storage - 61 - INFO - Downloading index files to 'data/faiss_index'...
+2025-07-20 14:41:20,445 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED&comp=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8016796f-6549-11f0-8e67-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:41:20,531 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files?restype=container&comp=list HTTP/1.1" 200 None
+2025-07-20 14:41:20,646 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cf55e9e5-601e-0078-1356-f9b315000000'
+    'x-ms-client-request-id': '8016796f-6549-11f0-8e67-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:11:19 GMT'
+2025-07-20 14:41:20,646 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading data.csv...
+2025-07-20 14:41:20,654 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '80364ec2-6549-11f0-8a7d-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:41:20,730 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/data.csv HTTP/1.1" 206 91
+2025-07-20 14:41:20,731 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '91'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:28 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601A290AA5D"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cf55ea15-601e-0078-3656-f9b315000000'
+    'x-ms-client-request-id': '80364ec2-6549-11f0-8a7d-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:11:19 GMT'
+2025-07-20 14:41:20,735 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.faiss...
+2025-07-20 14:41:20,737 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8042e8d9-6549-11f0-bb23-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:41:20,852 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.faiss HTTP/1.1" 206 582189
+2025-07-20 14:41:20,852 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cf55ea22-601e-0078-4256-f9b315000000'
+    'x-ms-client-request-id': '8042e8d9-6549-11f0-bb23-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:11:19 GMT'
+2025-07-20 14:41:21,204 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.pkl...
+2025-07-20 14:41:21,204 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '808a273f-6549-11f0-80a0-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:41:21,295 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.pkl HTTP/1.1" 206 187966
+2025-07-20 14:41:21,296 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cf55ea89-601e-0078-1c56-f9b315000000'
+    'x-ms-client-request-id': '808a273f-6549-11f0-80a0-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:11:20 GMT'
+2025-07-20 14:41:21,308 - src.cloud_connectors.azure_storage - azure_storage - 73 - INFO - Download complete.
+2025-07-20 14:41:22,311 - src.llm.chatbot - chatbot - 38 - INFO - Building the QA chain...
+2025-07-20 14:41:22,311 - src.llm.chatbot - chatbot - 41 - INFO - QA chain is ready.
+2025-07-20 14:41:22,311 - src.app_lifespan - app_lifespan - 74 - INFO - ChatBot has been initialized and stored in app state.
+2025-07-20 14:41:22,323 - src.processing.batch_processor - batch_processor - 98 - INFO - Starting batch ingestion process...
+2025-07-20 14:41:22,331 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '81361b65-6549-11f0-899f-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:41:22,334 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:41:22,647 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:41:22,649 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'd869f8b7-c01e-004e-4156-f93e65000000'
+    'x-ms-client-request-id': '81361b65-6549-11f0-899f-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 09:11:21 GMT'
+2025-07-20 14:41:22,650 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:41:26,215 - src.processing.vector_store_repository - vector_store_repository - 22 - INFO - Attempting to load vector store from Azure...
+2025-07-20 14:41:26,217 - src.cloud_connectors.azure_storage - azure_storage - 104 - INFO - Attempting to download blob 'index.faiss' as bytes...
+2025-07-20 14:41:26,219 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '83874ee0-6549-11f0-b053-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:41:26,295 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "HEAD /ai-files/index.faiss HTTP/1.1" 200 0
+2025-07-20 14:41:26,298 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Vary': 'REDACTED'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'd869fc43-c01e-004e-2156-f93e65000000'
+    'x-ms-client-request-id': '83874ee0-6549-11f0-b053-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:11:25 GMT'
+2025-07-20 14:41:26,298 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '83936e5c-6549-11f0-8c4c-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:41:26,388 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.faiss HTTP/1.1" 206 582189
+2025-07-20 14:41:26,401 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'd869fc48-c01e-004e-2656-f93e65000000'
+    'x-ms-client-request-id': '83936e5c-6549-11f0-8c4c-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:11:25 GMT'
+2025-07-20 14:41:26,770 - src.cloud_connectors.azure_storage - azure_storage - 104 - INFO - Attempting to download blob 'index.pkl' as bytes...
+2025-07-20 14:41:26,770 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '83db78b3-6549-11f0-a7c0-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:41:26,855 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "HEAD /ai-files/index.pkl HTTP/1.1" 200 0
+2025-07-20 14:41:26,855 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Vary': 'REDACTED'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'd869fcc2-c01e-004e-0456-f93e65000000'
+    'x-ms-client-request-id': '83db78b3-6549-11f0-a7c0-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:11:26 GMT'
+2025-07-20 14:41:26,855 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '83e87fcd-6549-11f0-ab42-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:41:26,952 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.pkl HTTP/1.1" 206 187966
+2025-07-20 14:41:26,952 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'd869fcd6-c01e-004e-1456-f93e65000000'
+    'x-ms-client-request-id': '83e87fcd-6549-11f0-ab42-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:11:26 GMT'
+2025-07-20 14:41:26,968 - src.processing.vector_store_repository - vector_store_repository - 28 - INFO - Found existing index in Azure. Loading into memory.
+2025-07-20 14:43:37,939 - src.app_lifespan - app_lifespan - 79 - INFO - Application shutdown: Cleaning up resources.
+2025-07-20 14:43:52,678 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:43:52,678 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:47:05,052 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:47:05,053 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:47:14,990 - sentence_transformers.SentenceTransformer - SentenceTransformer - 219 - INFO - Use pytorch device_name: cpu
+2025-07-20 14:47:14,991 - sentence_transformers.SentenceTransformer - SentenceTransformer - 227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-20 14:47:14,997 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-20 14:47:15,855 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:47:15,909 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:47:16,627 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:47:16,691 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:47:17,460 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:47:17,508 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:47:17,768 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-20 14:47:17,799 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-20 14:47:18,092 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:47:18,143 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:47:18,420 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-20 14:47:18,460 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-20 14:47:19,157 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-20 14:47:19,433 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-20 14:47:19,495 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-20 14:47:20,997 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-20 14:47:21,048 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-20 14:47:21,316 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-20 14:47:21,627 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-20 14:47:21,661 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-20 14:47:21,945 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-20 14:47:21,966 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5791cf41-654a-11f0-bf74-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:47:21,970 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:47:22,313 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:47:22,323 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '8392b7db-f01e-006a-0b57-f9c8c5000000'
+    'x-ms-client-request-id': '5791cf41-654a-11f0-bf74-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 09:17:21 GMT'
+2025-07-20 14:47:22,323 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:47:22,323 - src.cloud_connectors.azure_storage - azure_storage - 61 - INFO - Downloading index files to 'data/faiss_index'...
+2025-07-20 14:47:22,329 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED&comp=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '57c886d1-654a-11f0-812f-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:47:22,414 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files?restype=container&comp=list HTTP/1.1" 200 None
+2025-07-20 14:47:22,527 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '8392b7ea-f01e-006a-1657-f9c8c5000000'
+    'x-ms-client-request-id': '57c886d1-654a-11f0-812f-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:17:21 GMT'
+2025-07-20 14:47:22,532 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading data.csv...
+2025-07-20 14:47:22,534 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '57e8db80-654a-11f0-b629-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:47:22,618 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/data.csv HTTP/1.1" 206 91
+2025-07-20 14:47:22,619 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '91'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:28 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601A290AA5D"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '8392b810-f01e-006a-3557-f9c8c5000000'
+    'x-ms-client-request-id': '57e8db80-654a-11f0-b629-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:17:22 GMT'
+2025-07-20 14:47:22,623 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.faiss...
+2025-07-20 14:47:22,624 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '57f64f49-654a-11f0-bff0-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:47:22,731 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.faiss HTTP/1.1" 206 582189
+2025-07-20 14:47:22,731 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '8392b81d-f01e-006a-3f57-f9c8c5000000'
+    'x-ms-client-request-id': '57f64f49-654a-11f0-bff0-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:17:22 GMT'
+2025-07-20 14:47:23,204 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.pkl...
+2025-07-20 14:47:23,205 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '584f3bbb-654a-11f0-8de1-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:47:23,282 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.pkl HTTP/1.1" 206 187966
+2025-07-20 14:47:23,282 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '8392b87b-f01e-006a-0857-f9c8c5000000'
+    'x-ms-client-request-id': '584f3bbb-654a-11f0-8de1-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:17:22 GMT'
+2025-07-20 14:47:23,362 - src.cloud_connectors.azure_storage - azure_storage - 73 - INFO - Download complete.
+2025-07-20 14:47:24,334 - src.llm.chatbot - chatbot - 38 - INFO - Building the QA chain...
+2025-07-20 14:47:24,339 - src.llm.chatbot - chatbot - 41 - INFO - QA chain is ready.
+2025-07-20 14:47:24,341 - src.app_lifespan - app_lifespan - 74 - INFO - ChatBot has been initialized and stored in app state.
+2025-07-20 14:48:13,162 - src.processing.batch_processor - batch_processor - 98 - INFO - Starting batch ingestion process...
+2025-07-20 14:48:13,162 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '76160f36-654a-11f0-b77b-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:48:13,167 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:48:13,496 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:48:13,496 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'd5b3a458-e01e-0076-4957-f99aa5000000'
+    'x-ms-client-request-id': '76160f36-654a-11f0-b77b-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 09:18:12 GMT'
+2025-07-20 14:48:13,496 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:48:16,479 - src.processing.vector_store_repository - vector_store_repository - 22 - INFO - Attempting to load vector store from Azure...
+2025-07-20 14:48:16,479 - src.cloud_connectors.azure_storage - azure_storage - 104 - INFO - Attempting to download blob 'index.faiss' as bytes...
+2025-07-20 14:48:16,479 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '78101c5c-654a-11f0-aa32-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:48:16,600 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "HEAD /ai-files/index.faiss HTTP/1.1" 200 0
+2025-07-20 14:48:16,600 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Vary': 'REDACTED'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'd5b3a94d-e01e-0076-0857-f99aa5000000'
+    'x-ms-client-request-id': '78101c5c-654a-11f0-aa32-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:18:15 GMT'
+2025-07-20 14:48:16,613 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '78248449-654a-11f0-abbc-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:48:16,731 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.faiss HTTP/1.1" 206 582189
+2025-07-20 14:48:16,731 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'd5b3a966-e01e-0076-1d57-f99aa5000000'
+    'x-ms-client-request-id': '78248449-654a-11f0-abbc-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:18:15 GMT'
+2025-07-20 14:48:17,100 - src.cloud_connectors.azure_storage - azure_storage - 104 - INFO - Attempting to download blob 'index.pkl' as bytes...
+2025-07-20 14:48:17,102 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '786eeebc-654a-11f0-b5f0-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:48:17,163 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "HEAD /ai-files/index.pkl HTTP/1.1" 200 0
+2025-07-20 14:48:17,179 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Vary': 'REDACTED'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'd5b3a9c7-e01e-0076-6e57-f99aa5000000'
+    'x-ms-client-request-id': '786eeebc-654a-11f0-b5f0-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:18:15 GMT'
+2025-07-20 14:48:17,179 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '787ae505-654a-11f0-8bc0-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:48:17,262 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.pkl HTTP/1.1" 206 187966
+2025-07-20 14:48:17,262 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'd5b3a9d4-e01e-0076-7957-f99aa5000000'
+    'x-ms-client-request-id': '787ae505-654a-11f0-8bc0-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:18:16 GMT'
+2025-07-20 14:48:17,287 - src.processing.vector_store_repository - vector_store_repository - 28 - INFO - Found existing index in Azure. Loading into memory.
+2025-07-20 14:51:16,069 - src.app_lifespan - app_lifespan - 79 - INFO - Application shutdown: Cleaning up resources.
+2025-07-20 14:51:34,163 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:51:34,163 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:51:43,056 - sentence_transformers.SentenceTransformer - SentenceTransformer - 219 - INFO - Use pytorch device_name: cpu
+2025-07-20 14:51:43,056 - sentence_transformers.SentenceTransformer - SentenceTransformer - 227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-20 14:51:43,068 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-20 14:51:43,484 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:51:43,535 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:51:43,807 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:51:43,867 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:51:44,148 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:51:44,196 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:51:44,462 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-20 14:51:44,493 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-20 14:51:44,775 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:51:44,824 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:51:45,109 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-20 14:51:45,150 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-20 14:51:45,442 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-20 14:51:45,982 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-20 14:51:46,030 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-20 14:51:47,650 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-20 14:51:47,702 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-20 14:51:48,218 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-20 14:51:48,503 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-20 14:51:48,567 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-20 14:51:48,848 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-20 14:51:48,879 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'f6a9d13d-654a-11f0-b654-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:51:48,879 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:51:49,271 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:51:49,276 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'fa9b586a-401e-007f-6357-f9df76000000'
+    'x-ms-client-request-id': 'f6a9d13d-654a-11f0-b654-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 09:21:48 GMT'
+2025-07-20 14:51:49,278 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:51:49,279 - src.cloud_connectors.azure_storage - azure_storage - 61 - INFO - Downloading index files to 'data/faiss_index'...
+2025-07-20 14:51:49,281 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED&comp=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'f6e709d9-654a-11f0-a5b9-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:51:49,370 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files?restype=container&comp=list HTTP/1.1" 200 None
+2025-07-20 14:51:49,484 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'fa9b588c-401e-007f-8057-f9df76000000'
+    'x-ms-client-request-id': 'f6e709d9-654a-11f0-a5b9-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:21:48 GMT'
+2025-07-20 14:51:49,489 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading data.csv...
+2025-07-20 14:51:49,491 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'f7073023-654a-11f0-a921-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:51:49,584 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/data.csv HTTP/1.1" 206 91
+2025-07-20 14:51:49,585 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '91'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:28 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601A290AA5D"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'fa9b58de-401e-007f-5057-f9df76000000'
+    'x-ms-client-request-id': 'f7073023-654a-11f0-a921-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:21:48 GMT'
+2025-07-20 14:51:49,587 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.faiss...
+2025-07-20 14:51:49,590 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'f7163bb8-654a-11f0-ad06-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:51:49,724 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.faiss HTTP/1.1" 206 582189
+2025-07-20 14:51:49,724 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'fa9b5907-401e-007f-7457-f9df76000000'
+    'x-ms-client-request-id': 'f7163bb8-654a-11f0-ad06-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:21:49 GMT'
+2025-07-20 14:51:50,374 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.pkl...
+2025-07-20 14:51:50,376 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'f78e2f0f-654a-11f0-8924-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:51:50,455 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.pkl HTTP/1.1" 206 187966
+2025-07-20 14:51:50,456 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'fa9b5a1a-401e-007f-5c57-f9df76000000'
+    'x-ms-client-request-id': 'f78e2f0f-654a-11f0-8924-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:21:49 GMT'
+2025-07-20 14:51:50,534 - src.cloud_connectors.azure_storage - azure_storage - 73 - INFO - Download complete.
+2025-07-20 14:51:51,520 - src.llm.chatbot - chatbot - 38 - INFO - Building the QA chain...
+2025-07-20 14:51:51,523 - src.llm.chatbot - chatbot - 41 - INFO - QA chain is ready.
+2025-07-20 14:51:51,524 - src.app_lifespan - app_lifespan - 74 - INFO - ChatBot has been initialized and stored in app state.
+2025-07-20 14:52:25,148 - src.app_lifespan - app_lifespan - 79 - INFO - Application shutdown: Cleaning up resources.
+2025-07-20 14:53:09,083 - src.logger_setup - logger_setup - 17 - INFO - Logging has been configured.
+2025-07-20 14:53:09,083 - src.app_lifespan - app_lifespan - 31 - INFO - Application startup: Initializing resources...
+2025-07-20 14:53:18,446 - sentence_transformers.SentenceTransformer - SentenceTransformer - 219 - INFO - Use pytorch device_name: cpu
+2025-07-20 14:53:18,446 - sentence_transformers.SentenceTransformer - SentenceTransformer - 227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-20 14:53:18,461 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-20 14:53:18,821 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:53:18,851 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:53:19,129 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:53:19,167 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:53:19,434 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-20 14:53:19,488 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-20 14:53:19,937 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-20 14:53:19,978 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-20 14:53:20,254 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-20 14:53:20,318 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-20 14:53:20,583 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-20 14:53:20,629 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-20 14:53:20,915 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-20 14:53:21,238 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-20 14:53:21,286 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-20 14:53:22,901 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-20 14:53:22,946 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-20 14:53:23,227 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-20 14:53:23,542 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-20 14:53:23,588 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-20 14:53:23,875 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-20 14:53:23,896 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2f4bee4f-654b-11f0-a549-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:53:23,896 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:53:24,242 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:53:24,247 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cc553f8d-801e-0060-2657-f96c72000000'
+    'x-ms-client-request-id': '2f4bee4f-654b-11f0-a549-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 09:23:22 GMT'
+2025-07-20 14:53:24,250 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:53:24,251 - src.cloud_connectors.azure_storage - azure_storage - 61 - INFO - Downloading index files to 'data/faiss_index'...
+2025-07-20 14:53:24,253 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED&comp=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2f82a729-654b-11f0-8474-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:53:24,317 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files?restype=container&comp=list HTTP/1.1" 200 None
+2025-07-20 14:53:24,412 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cc553fa6-801e-0060-3757-f96c72000000'
+    'x-ms-client-request-id': '2f82a729-654b-11f0-8474-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:23:22 GMT'
+2025-07-20 14:53:24,412 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading data.csv...
+2025-07-20 14:53:24,424 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2f9ca94a-654b-11f0-959f-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:53:24,489 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/data.csv HTTP/1.1" 206 91
+2025-07-20 14:53:24,490 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '91'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:28 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601A290AA5D"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cc553fe2-801e-0060-6d57-f96c72000000'
+    'x-ms-client-request-id': '2f9ca94a-654b-11f0-959f-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:23:23 GMT'
+2025-07-20 14:53:24,494 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.faiss...
+2025-07-20 14:53:24,500 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2fa86848-654b-11f0-9e4b-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:53:24,583 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.faiss HTTP/1.1" 206 582189
+2025-07-20 14:53:24,583 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cc553ff0-801e-0060-7957-f96c72000000'
+    'x-ms-client-request-id': '2fa86848-654b-11f0-9e4b-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:23:23 GMT'
+2025-07-20 14:53:25,100 - src.cloud_connectors.azure_storage - azure_storage - 68 - INFO - Downloading index.pkl...
+2025-07-20 14:53:25,102 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '3004173c-654b-11f0-af58-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:53:25,163 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.pkl HTTP/1.1" 206 187966
+2025-07-20 14:53:25,163 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'cc55408a-801e-0060-7157-f96c72000000'
+    'x-ms-client-request-id': '3004173c-654b-11f0-af58-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:23:23 GMT'
+2025-07-20 14:53:25,231 - src.cloud_connectors.azure_storage - azure_storage - 73 - INFO - Download complete.
+2025-07-20 14:53:26,216 - src.llm.chatbot - chatbot - 38 - INFO - Building the QA chain...
+2025-07-20 14:53:26,220 - src.llm.chatbot - chatbot - 41 - INFO - QA chain is ready.
+2025-07-20 14:53:26,222 - src.app_lifespan - app_lifespan - 74 - INFO - ChatBot has been initialized and stored in app state.
+2025-07-20 14:55:35,805 - src.processing.batch_processor - batch_processor - 98 - INFO - Starting batch ingestion process...
+2025-07-20 14:55:35,805 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files?restype=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '7debf5a5-654b-11f0-8e4d-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:55:35,805 - urllib3.connectionpool - connectionpool - 1049 - DEBUG - Starting new HTTPS connection (1): tieoevryblobsv11.blob.core.windows.net:443
+2025-07-20 14:55:36,206 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "PUT /ai-files?restype=container HTTP/1.1" 409 230
+2025-07-20 14:55:36,206 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 409
+Response headers:
+    'Content-Length': '230'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'a981a7ba-d01e-0052-5a58-f96c05000000'
+    'x-ms-client-request-id': '7debf5a5-654b-11f0-8e4d-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'ContainerAlreadyExists'
+    'Date': 'Sun, 20 Jul 2025 09:25:35 GMT'
+2025-07-20 14:55:36,206 - src.cloud_connectors.azure_storage - azure_storage - 30 - INFO - Container 'ai-files' already exists.
+2025-07-20 14:55:39,943 - src.processing.vector_store_repository - vector_store_repository - 22 - INFO - Attempting to load vector store from Azure...
+2025-07-20 14:55:39,943 - src.cloud_connectors.azure_storage - azure_storage - 104 - INFO - Attempting to download blob 'index.faiss' as bytes...
+2025-07-20 14:55:39,943 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8063659b-654b-11f0-926c-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:55:40,038 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "HEAD /ai-files/index.faiss HTTP/1.1" 200 0
+2025-07-20 14:55:40,038 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Vary': 'REDACTED'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'a981ac19-d01e-0052-1c58-f96c05000000'
+    'x-ms-client-request-id': '8063659b-654b-11f0-926c-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:25:38 GMT'
+2025-07-20 14:55:40,038 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.faiss'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8071e39b-654b-11f0-aefb-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:55:40,117 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.faiss HTTP/1.1" 206 582189
+2025-07-20 14:55:40,133 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '582189'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B56C3F56"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'a981ac32-d01e-0052-3158-f96c05000000'
+    'x-ms-client-request-id': '8071e39b-654b-11f0-aefb-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:25:39 GMT'
+2025-07-20 14:55:40,480 - src.cloud_connectors.azure_storage - azure_storage - 104 - INFO - Attempting to download blob 'index.pkl' as bytes...
+2025-07-20 14:55:40,480 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '80b561ad-654b-11f0-bc75-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:55:40,544 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "HEAD /ai-files/index.pkl HTTP/1.1" 200 0
+2025-07-20 14:55:40,544 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Vary': 'REDACTED'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'a981acab-d01e-0052-1358-f96c05000000'
+    'x-ms-client-request-id': '80b561ad-654b-11f0-bc75-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:25:39 GMT'
+2025-07-20 14:55:40,544 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/index.pkl'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '80bf128f-654b-11f0-aa4e-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:55:40,623 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/index.pkl HTTP/1.1" 206 187966
+2025-07-20 14:55:40,623 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '187966'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:59 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601B580E88E"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'a981acb9-d01e-0052-1f58-f96c05000000'
+    'x-ms-client-request-id': '80bf128f-654b-11f0-aa4e-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:25:39 GMT'
+2025-07-20 14:55:40,639 - src.processing.vector_store_repository - vector_store_repository - 28 - INFO - Found existing index in Azure. Loading into memory.
+2025-07-20 14:55:40,639 - langchain_community.vectorstores.faiss - faiss - 218 - WARNING - `embedding_function` is expected to be an Embeddings object, support for passing in a function will soon be removed.
+2025-07-20 14:55:40,639 - src.processing.batch_processor - batch_processor - 37 - INFO - Loading instruction file: data.csv
+2025-07-20 14:55:40,639 - src.cloud_connectors.azure_storage - azure_storage - 77 - INFO - Loading 'data.csv' from Azure...
+2025-07-20 14:55:40,639 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/data.csv'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '80cd982f-654b-11f0-8157-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:55:40,705 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "HEAD /ai-files/data.csv HTTP/1.1" 200 0
+2025-07-20 14:55:40,705 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 200
+Response headers:
+    'Content-Length': '91'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:28 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601A290AA5D"'
+    'Vary': 'REDACTED'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'a981accf-d01e-0052-3058-f96c05000000'
+    'x-ms-client-request-id': '80cd982f-654b-11f0-8157-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:25:39 GMT'
+2025-07-20 14:55:40,718 - azure.core.pipeline.policies.http_logging_policy - _universal - 511 - INFO - Request URL: 'https://tieoevryblobsv11.blob.core.windows.net/ai-files/data.csv'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.11.13 (Windows-10-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '80d9b415-654b-11f0-a8ef-28a06b72f1d6'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-07-20 14:55:40,782 - urllib3.connectionpool - connectionpool - 544 - DEBUG - https://tieoevryblobsv11.blob.core.windows.net:443 "GET /ai-files/data.csv HTTP/1.1" 206 91
+2025-07-20 14:55:40,782 - azure.core.pipeline.policies.http_logging_policy - _universal - 554 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '91'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 18 Jul 2025 13:47:28 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDC601A290AA5D"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'a981acf0-d01e-0052-4d58-f96c05000000'
+    'x-ms-client-request-id': '80d9b415-654b-11f0-a8ef-28a06b72f1d6'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Access-Control-Allow-Origin': 'REDACTED'
+    'Date': 'Sun, 20 Jul 2025 09:25:39 GMT'
+2025-07-20 14:55:40,829 - src.cloud_connectors.azure_storage - azure_storage - 88 - INFO - Successfully loaded 'data.csv'.
+2025-07-20 14:55:40,845 - src.processing.batch_processor - batch_processor - 74 - INFO - Found 1 document(s) to delete.
+2025-07-20 14:55:40,845 - src.processing.rag_system - rag_system - 36 - WARNING - No matching chunks found in vector store to delete.
+2025-07-20 14:55:40,845 - src.processing.batch_processor - batch_processor - 88 - INFO - Saving updated index to Azure...

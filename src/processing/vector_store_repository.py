@@ -5,7 +5,7 @@ from langchain_community.docstore import InMemoryDocstore
 from langchain_community.vectorstores import FAISS
 from langchain_core.embeddings import Embeddings
 from src.config import app_config
-
+import numpy as np
 from src.cloud_connectors.azure_storage import AzureBlobManager
 
 logger = logging.getLogger(__name__)
@@ -26,7 +26,9 @@ class VectorStoreRepository:
 
         if index_bytes and docstore_bytes:
             logger.info("Found existing index in Azure. Loading into memory.")
-            index = faiss.read_index_from_buffer(index_bytes)
+            # Convert the bytes object to a NumPy uint8 array
+            index_as_array = np.frombuffer(index_bytes, dtype=np.uint8)
+            index = faiss.deserialize_index(index_as_array)
             docstore, index_to_docstore_id = pickle.loads(docstore_bytes)
         else:
             logger.warning("No existing index found in Azure. Creating a new, empty vector store.")

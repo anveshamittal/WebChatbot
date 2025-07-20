@@ -90,3 +90,26 @@ class AzureBlobManager:
         except Exception as e:
             logger.exception(f"Error loading CSV '{blob_name}' from Azure.")
             return None
+        
+    def download_blob_as_bytes(self, blob_name: str) -> bytes | None:
+        """
+        Downloads a blob's content directly into a bytes object.
+
+        Args:
+            blob_name: The name of the blob to download.
+
+        Returns:
+            The content of the blob as bytes, or None if the blob does not exist.
+        """
+        logger.info(f"Attempting to download blob '{blob_name}' as bytes...")
+        try:
+            blob_client = self.container_client.get_blob_client(blob_name)
+            if not blob_client.exists():
+                logger.warning(f"Blob '{blob_name}' not found in container.")
+                return None
+            
+            downloader = blob_client.download_blob()
+            return downloader.readall()
+        except Exception:
+            logger.exception(f"Failed to download blob '{blob_name}'.")
+            return None

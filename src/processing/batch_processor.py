@@ -93,16 +93,13 @@ class BatchIngestionService:
             return {"status": "success", "message": "No changes needed."}
         
 # This is the main entry point function for the batch process
-def run_batch_ingestion_logic():
+def run_batch_ingestion_logic(embedding_factory: EmbeddingModelFactory):
     """Initializes all services and runs the batch ingestion process."""
     logger.info("Starting batch ingestion process...")
     azure_manager = AzureBlobManager(
         connection_string=os.getenv('AZURE_STORAGE_CONNECTION_STRING'),
         container_name=app_config.azure['container_name']
     )
-    
-    embedding_factory = EmbeddingModelFactory()
-    # Register providers... if not already done at app startup
     
     embedding_model = embedding_factory.create(
         app_config.embedding['model_provider'],

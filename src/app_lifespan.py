@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from src.logger_setup import setup_logging
 from src.llm.chatbot import ChatBot # <-- Utilizing code from another file
 from src.processing import document_processor
-from cloud_connectors.azure_storage import AzureBlobManager
+from src.cloud_connectors.azure_storage import AzureBlobManager
 from src.config import app_config
 from dotenv import load_dotenv
 from langchain_community.vectorstores import FAISS
@@ -41,7 +41,7 @@ async def lifespan(app: FastAPI):
     embeddings = embedding_provider.get_instance()
 
     # Prepare the vector store (check for local files, download if needed)
-    azure_manager = AzureBlobManager(os.getenv('AZURE_STORAGE_CONNECTION_STRING',app_config.azure['container_name']))
+    azure_manager = AzureBlobManager(connection_string=os.getenv('AZURE_STORAGE_CONNECTION_STRING'), container_name = app_config.azure['container_name'])
 
     azure_manager.download_faiss_to_local("data/faiss_index")
 
