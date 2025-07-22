@@ -75,7 +75,7 @@ class BatchIngestionService:
         self.rag_system.delete_documents(ids_to_delete)
         self.changes_made = True
 
-    def run(self):
+    def run(self, repository: VectorStoreRepository):
         """Executes the full batch ingestion process."""
         instruction_df = self._load_instruction_file()
         if instruction_df is None:
@@ -84,9 +84,14 @@ class BatchIngestionService:
         self._process_additions(instruction_df)
         self._process_deletions(instruction_df)
 
+        # if self.changes_made:
+        #     logger.info("Saving updated index to Azure...")
+        #     self.rag_system.save()
+        #     return {"status": "success", "message": "Index updated and saved."}
         if self.changes_made:
-            logger.info("Saving updated index to Azure...")
-            self.rag_system.save()
+            logger.info("Saving updated index via repository...")
+        # Now we use the repository that was passed directly into this method
+            repository.save(self.rag_system.vector_store)
             return {"status": "success", "message": "Index updated and saved."}
         else:
             logger.info("No changes to add or delete. Index is up to date.")
@@ -127,6 +132,6 @@ def run_batch_ingestion_logic(embedding_factory: EmbeddingModelFactory):
         instruction_blob_name=app_config.files['csv_blob_name']
     )
     
-    result = service.run()
+    result = service.run(repository=repository)
     logger.info(f"Batch ingestion process finished with status: {result.get('status')}")
     return result

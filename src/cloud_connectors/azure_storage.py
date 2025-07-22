@@ -5,6 +5,7 @@ import pandas as pd
 from azure.storage.blob import BlobServiceClient
 from azure.core.exceptions import ResourceExistsError
 import logging
+import tempfile
     
 logger = logging.getLogger(__name__)
 
@@ -35,12 +36,17 @@ class AzureBlobManager:
     def save_faiss_index_in_memory(self, index, docstore, index_to_docstore_id: dict,faiss_index_blob_name="index.faiss",datastore_blob_name ="index.pkl"):
         """Saves the FAISS index and docstore to Azure from in-memory buffers."""
         logger.info("Saving index to Azure...")
+        temp_dir = tempfile.gettempdir()
+        temp_index_path = os.path.join(temp_dir, f"temp_{os.urandom(8).hex()}.faiss")
         try:
-            # Save index to an in-memory bytes buffer
-            index_bytes = faiss.write_index_to_buffer(index)
-            self.container_client.upload_blob(
-                name=faiss_index_blob_name, 
-                data=index_bytes, 
+            faiss.write_index(index, temp_index_path)
+                # temp_index_file.seek(0) # Rewind the file to the beginning
+            
+            # Upload the temporary file's content
+            with open(temp_index_path, "rb") as index_data:
+                self.container_client.upload_blob(
+                name=faiss_index_blob_name,
+                data=index_data,
                 overwrite=True
             )
 
@@ -52,9 +58,10 @@ class AzureBlobManager:
                 overwrite=True
             )
             logger.info("Successfully saved index to Azure.")
-        except Exception as e:
-            logger.exception("Failed to save index to Azure.")
-            raise
+        finally:
+        # 3. IMPORTANT: Always clean up the temporary file
+            if os.path.exists(temp_index_path):
+                os.remove(temp_index_path)
     
     def download_faiss_to_local(self, local_folder_path: str):
         """Downloads all blobs from the container to a local folder."""
