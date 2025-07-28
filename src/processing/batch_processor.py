@@ -106,11 +106,12 @@ def run_batch_ingestion_logic(embedding_factory: EmbeddingModelFactory):
         container_name=app_config.azure['container_name']
     )
     
-    embedding_model = embedding_factory.create(
+    embedding_provider = embedding_factory.create(
         app_config.embedding['model_provider'],
         app_config.embedding['embedding_model']
     )
-    
+    embedding_model = embedding_provider.get_instance()
+
     repository = VectorStoreRepository(
         azure_manager,
         app_config.embedding['embedding_dimension']
